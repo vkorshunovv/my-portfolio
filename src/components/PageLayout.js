@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 export default function PageLayout() {
   return (
-    <div id="pageLayout" className="min-h-screen text-slate-400">
+    <div id="pageLayout" className="min-h-screen text-slate-300">
       <Header />
       <Hero />
       <About />
