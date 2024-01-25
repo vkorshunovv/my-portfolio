@@ -9,3 +9,7 @@ body {
     100% {background-position: 100%}
 }
 
+html {
+    scroll-behavior: smooth;
+}
+

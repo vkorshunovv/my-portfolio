@@ -9,12 +9,12 @@ import Footer from "./Footer";
 export default function PageLayout() {
   return (
     <div id="pageLayout" className="min-h-screen text-slate-300">
-      <Header />
+      {/* <Header />
       <Hero />
       <About />
       <Education />
       <Projects />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

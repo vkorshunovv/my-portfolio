@@ -4,7 +4,7 @@ import right from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/right_
 
 export default function About() {
   return (
-    <div className="min-h-screen grid grid-cols-12 grid-rows-2 bg-gradient-to-t from-slate-950 w-auto ">
+    <div id="about" className="min-h-screen grid grid-cols-12 grid-rows-2 bg-gradient-to-t from-slate-950 w-auto ">
       <div className="size-60 col-start-3 ">
         <img src={arrow} alt="arrow" />
       </div>
@@ -28,19 +28,19 @@ export default function About() {
         </div>
       </article>
 
-      <article className="flex justify-center content-center row-start-2 col-start-2 col-end-12">
+      <article className="flex justify-center content-center row-start-2 col-start-2 col-end-12 mb-9">
         <figure className="basis-3/4 bg-grey-100 pr-5 ">
           <img
             className="h-fit rounded-2xl"
             src={right}
-            alt="Picture from my travel"
+            alt="first travel"
           />
         </figure>
         <figure className="basis-1/4  bg-grey-400">
           <img
             className="h-fit rounded-2xl"
             src={left}
-            alt="Picture from my travel"
+            alt="second travel"
           />
         </figure>
       </article>

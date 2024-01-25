@@ -9,29 +9,29 @@ export default function Header() {
   };
 
   return (
-    <div id="header" className="grid grid-cols-12 items-center my-5">
-      <div className="text-slate-400 text-xl font-light col-start-6 ">
+    <div id="header" className="grid grid-cols-12 items-center justify-items-end my-5">
+      <div className="text-slate-400 text-l font-light col-start-7 col-end-11">
         <ul>
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Education</a>
+            <a href="#education">Education</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/footer">Contacts</a>
+            <a href="#footer">Contacts</a>
           </li>
         </ul>
       </div>
       <button
         onClick={toggleTheme}
-        className="container col-start-11"
+        className="container col-start-11 mr-9"
         aria-label="Toggle color mode"
         title="Toggle color mode"
       >
