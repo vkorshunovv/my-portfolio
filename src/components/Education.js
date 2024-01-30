@@ -37,12 +37,12 @@ export default function Education() {
           <img src={arrowLeft} alt="small arrow" />
         </div> */}
         <div className="">
-          <em className="text-xl"> ...and there will be more!</em>
+          <em className="text-xl text-slate-100"> ...and there will be more!</em>
         </div>
       </section>
       <section className="mt-28">
         <div className="flex justify-start">
-          <div className="bg-gradient-to-l from-indigo-800 to-slate-950 hover:from-indigo-950 rounded-2xl m-9 w-2/6">
+          <div className="bg-gradient-to-l from-indigo-800 to-slate-950 hover:from-indigo-950 rounded-2xl m-9 w-2/6 ">
             <div className="m-6">
               Lead Engineer at Upstatement I build pixel-perfect, accessible
               products for the web and beyond. Lead Engineer at Upstatement Is
@@ -54,7 +54,7 @@ export default function Education() {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="bg-gradient-to-r from-indigo-800 to-slate-950 via-indigo-950 to-indigo-800 hover:from-indigo-950 rounded-2xl m-9 w-2/6">
+          <div className="bg-gradient-to-r from-indigo-800 to-slate-950 via-indigo-950 to-indigo-800 hover:from-indigo-950 rounded-2xl m-9 w-2/6 ">
             <div className="m-6">
               Lead Engineer at Upstatement I build pixel-perfect, accessible
               products for the web and beyond. Lead Engineer at Upstatement I
