@@ -16,24 +16,24 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="min-h-36 bg-gradient-to-b from-slate-950 from-10 to-gray-800  "
+      className="min-h-36 bg-gradient-to-b from-slate-950 from-10 to-gray-900  "
     >
       <div className="flex items-end w-full ">
         <section className="w-1/3 flex justify-center mt-24 mb-4 gap-2 ">
           <a href="https://www.instagram.com/vkorshunovv" target="_blank">
-            <img src={instagram} className="size-8 mx-2" />
+            <img src={instagram} className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105" />
           </a>
           <a href="https://www.facebook.com/victor.korshunow" target="_blank">
-            <img src={facebook} className="size-8 mx-2" />
+            <img src={facebook} className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105" />
           </a>
           <a href="https://t.me/korshunow" target="_blank">
-            <img src={telegram} className="size-8 mx-2" />
+            <img src={telegram} className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105" />
           </a>
           <a href="https://www.linkedin.com/in/viktor-korshunov-6379b6282/" target="_blank">
-            <img src={linkedin} className="size-8 mx-2" />
+            <img src={linkedin} className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105" />
           </a>
           <a href="https://github.com/vkorshunovv" target="_blank">
-            <img src={github} className="size-8 mx-2" />
+            <img src={github} className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105" />
           </a>
         </section>
         <section className="w-1/3 mt-24 mb-4 flex justify-center">

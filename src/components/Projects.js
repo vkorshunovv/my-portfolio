@@ -3,17 +3,17 @@ export default function Projects() {
     <div id="projects" className="min-h-screen bg-slate-950 ">
       <div className="flex justify-center">
         <div className="m-20">
-          <strong className="text-slate-100 text-6xl">
+          <strong className="text-slate-100 text-8xl">
             My Projects<span className="text-rose-500">*</span>
             <br />
-            <span className="text-xl justify-center flex text-slate-700 mt-3 blur-sm transition delay-100 duration-300 hover:blur-none hover:cursor-pointer">
+            <span className="text-xl justify-center flex text-slate-500 mt-3 blur-sm transition delay-100 duration-300 hover:blur-none hover:cursor-pointer">
               <span className="text-rose-500">*</span>currently unavailable
             </span>
           </strong>
         </div>
       </div>
       <div className="grid grid-cols-12 grid-rows-3">
-        <section className="col-start-2 col-end-12 row-span-1 flex justify-between items-center">
+        <section className="col-start-2 col-end-12 row-span-1 flex justify-between items-center ">
           <div className="basis-5/12 bg-rose-900 rounded-2xl m-6 size-48 animate-pulse blur-md">
             <div className="flex justify-start flex-wrap">
               <p className="m-4 text-sm text-zinc-50 font-light leading-7">

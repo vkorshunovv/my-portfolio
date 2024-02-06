@@ -5,7 +5,6 @@ import reactLogo from "../assets/react.png";
 import git from "../assets/git.png";
 import github from "../assets/github-light.png";
 import figma from "../assets/figma.png";
-import arrowLeft from "../assets/mirror-icon-left-arrow2.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap-5.png";
 
@@ -14,30 +13,29 @@ export default function Education() {
     <div id="education" className="min-h-screen bg-slate-950 ">
       <section className="flex justify-center">
         <div className="m-20">
-          <strong className="text-slate-100 text-6xl">
-            Languages I speak...
+          <strong className="text-slate-100 text-8xl ">
+            Languages I speak<span className="text-teal-600 ">...</span>
           </strong>
         </div>
       </section>
       <section className="flex justify-center">
         <div className="flex flex-wrap justify-center gap-8 mt-10 items-center w-2/4">
-          <img src={html5} className="size-24" alt="Html" />
-          <img src={css3} className="size-24" alt="Css" />
-          <img src={js} className="size-24" alt="JavaScript" />
-          <img src={reactLogo} className="size-24" alt="React" />
-          <img src={bootstrap} className="size-24" alt="Bootstrap" />
-          <img src={tailwind} className="size-24" alt="Taiwind" />
-          <img src={git} className="size-24" alt="Git" />
-          <img src={github} className="size-24" alt="GitHub" />
-          <img src={figma} className="size-24" alt="Figma" />
+          <img src={html5} className="size-24 " alt="Html" />
+          <img src={css3} className="size-24 " alt="Css" />
+          <img src={js} className="size-24 " alt="JavaScript" />
+          <img src={reactLogo} className="size-24 " alt="React" />
+          <img src={bootstrap} className="size-24 " alt="Bootstrap" />
+          <img src={tailwind} className="size-24 " alt="Taiwind" />
+          <img src={git} className="size-24 " alt="Git" />
+          <img src={github} className="size-24 " alt="GitHub" />
+          <img src={figma} className="size-24 " alt="Figma" />
         </div>
       </section>
       <section className="flex justify-end w-11/12 items-end mt-52">
-        {/* <div className="w-28 h-20">
-          <img src={arrowLeft} alt="small arrow" />
-        </div> */}
-        <div className="">
-          <em className="text-xl text-slate-100"> ...and there will be more!</em>
+        <div className="animate-bounce">
+          <em className="text-xl text-slate-100">
+            <span className="text-teal-600">...</span>and there will be more!
+          </em>
         </div>
       </section>
       <section className="mt-28">

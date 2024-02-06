@@ -5,9 +5,9 @@ import right from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/right_
 export default function About() {
   return (
     <div id="about" className="min-h-screen grid grid-cols-12 grid-rows-2 bg-gradient-to-t from-slate-950 w-auto ">
-      <div className="size-60 col-start-4 ">
+      {/* <div className="size-60 col-start-4 ">
         <img src={arrow} alt="arrow" />
-      </div>
+      </div> */}
       <article className="flex flex-wrap justify-center text-slate-200 text-xl col-start-7 col-end-12 font-medium justify-between h-3/6 text-pretty mt-10 pt-10 ">
         <div className="my-3">
           Before I stepped into the world of product design, I was a web

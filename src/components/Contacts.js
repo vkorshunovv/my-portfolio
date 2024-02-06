@@ -22,14 +22,16 @@ export default function Contacts() {
                 type="text"
                 id="name"
                 placeholder="Name"
-                className="w-full m-1 p-3 rounded-lg bg-violet-800 shadow-2xl "
+                required
+                className="w-full m-1 p-3 rounded-lg bg-violet-800 shadow-2xl focus:border focus:border-zink-700 focus:ring-0 focus:outline-none"
               ></input>
               <br />
               <input
                 type="email"
                 id="email"
                 placeholder="Email"
-                className="w-full m-1 p-3 rounded-lg bg-violet-900 shadow-2xl "
+                required
+                className="w-full m-1 p-3 rounded-lg bg-violet-900 shadow-2xl focus:border focus:border-zink-700 focus:ring-1 focus:outline-none"
               ></input>
               <br />
               <textarea
@@ -38,14 +40,15 @@ export default function Contacts() {
                 placeholder="Message"
                 rows="4"
                 cols="5"
-                className="w-full m-1 size-48 p-3 rounded-lg bg-violet-950 shadow-2xl resize-none"
+                required
+                className="w-full m-1 size-48 p-3 rounded-lg bg-violet-950 shadow-2xl resize-none focus:border focus:border-zink-700 focus:ring-1 focus:outline-none "
               ></textarea>
               <div className="flex justify-center w-full">
                 <input
                   type="submit"
                   id="submit"
                   value="Boom!"
-                  className="m-9 p-2 w-48 h-12 rounded-lg text-2xl bg-gradient-to-r from-zinc-800 to-gray-800 "
+                  className="m-9 p-2 w-48 h-12 rounded-lg text-2xl bg-gradient-to-r from-zinc-800 to-gray-700 text-slate-400 duration-100 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:scale-105 hover:shadow-2xl hover:shadow-pink-900"
                 ></input>
               </div>
             </form>
