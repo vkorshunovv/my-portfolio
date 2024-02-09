@@ -1,4 +1,16 @@
+import { useState } from "react";
+
 export default function Contacts() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
   return (
     <div id="contacts" className="min-h-screen bg-slate-950 ">
       <section className="min-h-screen">
@@ -17,13 +29,18 @@ export default function Contacts() {
       <section className="h-fit grid grid-cols-12">
         <div className="col-start-5 col-end-9">
           <div className="w-full">
-            <form className="flex flex-wrap text-slate-100 justify-end mb-24">
+            <form
+              className="flex flex-wrap text-slate-100 justify-end mb-24"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 id="name"
                 placeholder="Name"
                 required
                 className="w-full m-1 p-3 rounded-lg bg-violet-800 shadow-2xl focus:border focus:border-zink-700 focus:ring-0 focus:outline-none"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
               ></input>
               <br />
               <input
@@ -32,16 +49,20 @@ export default function Contacts() {
                 placeholder="Email"
                 required
                 className="w-full m-1 p-3 rounded-lg bg-violet-900 shadow-2xl focus:border focus:border-zink-700 focus:ring-1 focus:outline-none"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
               ></input>
               <br />
               <textarea
                 type="textarea"
                 id="message"
                 placeholder="Message"
+                value={message}
                 rows="4"
                 cols="5"
                 required
                 className="w-full m-1 size-48 p-3 rounded-lg bg-violet-950 shadow-2xl resize-none focus:border focus:border-zink-700 focus:ring-1 focus:outline-none "
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               <div className="flex justify-center w-full">
                 <input

@@ -14,7 +14,7 @@ export default function Education() {
       <section className="flex justify-center">
         <div className="m-20">
           <strong className="text-slate-100 text-8xl ">
-            Languages I speak<span className="text-teal-600 ">...</span>
+            Languages I speak<span className="text-teal-600 ml-2">...</span>
           </strong>
         </div>
       </section>
