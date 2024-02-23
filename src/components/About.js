@@ -9,8 +9,8 @@ export default function About() {
       id="about"
       className="min-h-screen grid grid-cols-12 bg-gradient-to-t from-slate-950 w-auto"
     >
-      <article className="flex flex-wrap h-min justify-center text-slate-200 text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12">
-        <p className="my-3">
+      <article className="flex flex-wrap h-min justify-center text-slate-100 text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-b from-green-950 to-teal-950 rounded-2xl opacity-70 p-6">
+        <p className="mb-3 ">
           Before I delved into the world of web development, I worked in the
           theater field. This experience gave me a great understanding of
           working in a large team, where each person is responsible for their
@@ -18,7 +18,7 @@ export default function About() {
           This taught me to better understand people and see the world in all
           its manifestations.
         </p>
-        <p className="my-3">
+        <p className="my-3 ">
           Since childhood, I have also been interested in gadgets and
           technology, reading a huge number of magazines about the latest
           technological innovations and spending a lot of time on the computer,
@@ -27,10 +27,9 @@ export default function About() {
           to instantly see the result of your work opens up the potential for
           limitless creativity and imagination.
         </p>
-        <p className="mt-3">
-          Outside work, I enjoy walking near my new home by the sea, listening
-          to music, exploring the world with my wife, and dreaming about our
-          pets.
+        <p className="mt-3 ">
+          Outside work, I enjoy walking near my home by the sea, listening to
+          music, exploring the world with my wife, and dreaming about our pets.
         </p>
       </article>
 
