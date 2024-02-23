@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="min-h-36 bg-gradient-to-b from-slate-950 from-10 to-gray-900  "
+      className="min-h-36 bg-gradient-to-b from-slate-950 to-gray-800   "
     >
       <div className="flex items-end w-full ">
         <section className="w-1/3 flex justify-center mt-24 mb-4 gap-2 ">

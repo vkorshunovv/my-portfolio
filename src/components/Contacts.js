@@ -12,22 +12,22 @@ export default function Contacts() {
     setMessage("");
   }
   return (
-    <div id="contacts" className="min-h-screen bg-slate-950 ">
-      <section className="min-h-screen">
+    <div id="contacts" className="min-h-screen bg-slate-950 grid grid-cols-12 items-center">
+      <section className=" col-start-1 col-end-7 ml-5">
         <div className="">
-          <div className="flex flex-wrap w-5/12 mb-24">
-            <strong className="text-slate-100 text-9xl m-5 w-11/12  mb-12">
+          <div className="flex flex-wrap ">
+            <strong className="text-slate-100 text-9xl mb-12">
               Lets talk<span className="text-teal-500">.</span>
             </strong>
-            <strong className="text-slate-100 text-8xl m-5 ">
+            <strong className="text-slate-100 text-8xl  ">
               I'm waiting for your thoughts, questions, or just a friendly hello
               <span className="text-rose-500">.</span>
             </strong>
           </div>
         </div>
       </section>
-      <section className="h-fit grid grid-cols-12">
-        <div className="col-start-5 col-end-9">
+      <section className=" col-start-7 col-end-12 content-center">
+        <div className="">
           <div className="w-full">
             <form
               className="flex flex-wrap text-slate-100 justify-end mb-24"
@@ -38,7 +38,7 @@ export default function Contacts() {
                 id="name"
                 placeholder="Name"
                 required
-                className="w-full m-1 p-3 rounded-lg bg-violet-800 shadow-2xl focus:border focus:border-zink-700 focus:ring-0 focus:outline-none"
+                className="w-full m-1 p-3 rounded-lg bg-teal-800 shadow-2xl focus:bg-slate-950"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
               ></input>
@@ -48,7 +48,7 @@ export default function Contacts() {
                 id="email"
                 placeholder="Email"
                 required
-                className="w-full m-1 p-3 rounded-lg bg-violet-900 shadow-2xl focus:border focus:border-zink-700 focus:ring-1 focus:outline-none"
+                className="w-full m-1 p-3 rounded-lg bg-teal-900 shadow-2xl focus:bg-slate-950"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               ></input>
@@ -61,7 +61,7 @@ export default function Contacts() {
                 rows="4"
                 cols="5"
                 required
-                className="w-full m-1 size-48 p-3 rounded-lg bg-violet-950 shadow-2xl resize-none focus:border focus:border-zink-700 focus:ring-1 focus:outline-none "
+                className="w-full m-1 size-48 p-3 rounded-lg bg-teal-950 shadow-2xl resize-none focus:bg-slate-950"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               <div className="flex justify-center w-full">

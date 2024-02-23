@@ -43,8 +43,8 @@ export default function Education() {
           </em>
         </div>
       </section>
-      <section className="mt-28 ">
-        <div className="flex justify-start m-1">
+      <section className="mt-28 grid grid-cols-12 grid-rows-3 ">
+        <div className="col-start-2 col-end-12 flex justify-start m-1">
           <div className="bg-gradient-to-l from-emerald-900 to-slate-950 rounded-2xl ml-44 w-4/12 h-64 ">
             <div className="w-full m-6 px-5 flex flex-col ">
               <div className="px-5">
@@ -72,7 +72,7 @@ export default function Education() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center m-1">
+        <div className="col-start-2 col-end-12 flex justify-center m-1">
           <div className="bg-gradient-to-l from-teal-900 to-slate-950 rounded-2xl w-4/12 h-64 ">
             <div className="w-full m-6 px-5 flex flex-col ">
               <div className="px-5">
@@ -95,7 +95,7 @@ export default function Education() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end mt-1">
+        <div className="col-start-2 col-end-12 flex justify-end mt-1">
           <div className="bg-gradient-to-l from-cyan-900 to-slate-950 rounded-2xl mr-44 w-4/12 h-64">
             <div className="w-full m-6 px-5 flex flex-col ">
               <div className="px-5 ">

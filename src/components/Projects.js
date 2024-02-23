@@ -14,7 +14,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-12 grid-rows-3 ">
         <section className="col-start-2 col-end-12 row-span-1 flex justify-between items-center ">
-          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950  rounded-2xl mr-6 size-48 blur-md">
+          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950  rounded-2xl mr-6 size-48 blur-2xl">
             <div className="flex justify-start flex-wrap animate-pulse">
               <p className="m-4 text-sm text-zinc-50 font-light leading-7 opacity-50">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,17 +27,17 @@ export default function Projects() {
             </div>
           </div>
           <div className="basis-7/12 bg-gradient-to-r from-emerald-950 to-cyan-950 rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl">
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
           </div>
         </section>
         <section className="col-start-2 col-end-12 row-span-2 flex justify-between items-center">
-          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950 rounded-2xl mr-6 size-48 blur-md">
+          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950 rounded-2xl mr-6 size-48 blur-2xl">
             <div className="flex justify-start flex-wrap animate-pulse">
               <p className="m-4 text-sm text-zinc-50 font-light leading-7 opacity-50">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,17 +50,17 @@ export default function Projects() {
             </div>
           </div>
           <div className="basis-7/12 bg-gradient-to-r from-emerald-950 to-cyan-950 rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl">
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
           </div>
         </section>
         <section className="col-start-2 col-end-12 row-span-3 flex justify-between items-center mb-36">
-          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950 rounded-2xl mr-6 size-48 blur-md">
+          <div className="basis-5/12 bg-gradient-to-l from-cyan-950 to-emerald-950 rounded-2xl mr-6 size-48 blur-2xl">
             <div className="flex justify-start flex-wrap animate-pulse">
               <p className="m-4 text-sm text-zinc-50 font-light leading-7 opacity-50">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,13 +73,13 @@ export default function Projects() {
             </div>
           </div>
           <div className="basis-7/12 bg-gradient-to-r from-emerald-950 to-cyan-950 rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl">
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-60"></div>
-            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
-            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-60"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-48 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-14 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-24 bg-slate-700 m-4 rounded-3xl animate-pulse opacity-50"></div>
+            <div className="w-96 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
+            <div className="w-36 h-12 bg-slate-700 m-4 rounded-xl animate-pulse opacity-50"></div>
           </div>
         </section>
       </div>
