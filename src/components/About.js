@@ -1,16 +1,34 @@
 import arrow from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/icon-right-arrow.png";
-import left from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/left_pic.jpg";
-import right from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/right_pic.jpg";
-import "/Users/viktorkorshunov/Desktop/my-portfolio/src/components/about.css";
+import rightPic from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/IMG_7623.png";
+import leftPic from "/Users/viktorkorshunov/Desktop/my-portfolio/src/assets/IMG_4479.png";
+import "../components/About.css";
 
 export default function About() {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
   return (
     <div
       id="about"
       className="min-h-screen grid grid-cols-12 bg-gradient-to-t from-slate-950 w-auto"
     >
-      <article className="flex flex-wrap h-min justify-center text-slate-100 text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-b from-green-950 to-teal-950 rounded-2xl opacity-70 p-6">
-        <p className="mb-3 ">
+      <article className="flex flex-wrap h-min justify-center text-slate-100 text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-t from-green-900  rounded-br-2xl rounded-bl-2xl opacity-70 p-6 mt-4 reveal fade-bottom">
+        <p className="mb-3 pt-4">
           Before I delved into the world of web development, I worked in the
           theater field. This experience gave me a great understanding of
           working in a large team, where each person is responsible for their
@@ -23,35 +41,36 @@ export default function About() {
           technology, reading a huge number of magazines about the latest
           technological innovations and spending a lot of time on the computer,
           exploring its capabilities. When I first tried HTML, it was like
-          attraction at first sight. CSS has finally won me over :) The ability
-          to instantly see the result of your work opens up the potential for
-          limitless creativity and imagination.
+          attraction at first sight. CSS has finally won me over &#129512;. The
+          ability to instantly see the result of your work opens up the
+          potential for limitless creativity and imagination.
         </p>
         <p className="mt-3 ">
           Outside work, I enjoy walking near my home by the sea, listening to
-          music, exploring the world with my wife, and dreaming about our pets.
+          music, exploring the world with my wife, and taking pictures with my
+          phone &#8595;
         </p>
       </article>
 
       <article className="flex justify-center content-center col-start-2 col-end-12 mb-12">
-        <figure className="aboutContainer basis-3/4 bg-grey-100 pr-6">
+        <figure className="aboutContainer basis-2/3 bg-grey-100 mr-6 flex items-stretch reveal fade-bottom">
           <img
-            className="h-fit rounded-2xl shadow-xl shadow-teal-950/40 border border-teal-950/40"
-            src={right}
+            className="rounded-2xl border border-teal-950/40"
+            src={leftPic}
             alt="first travel card"
           />
-          <figcaption className="rounded-2xl text-slate-100 font-semibold text-lg flex justify-end flex-col place-items-center">
-            <p>San Paolo, Brazil</p>
+          <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
+            <p className="p-3">Bruges, Belgium</p>
           </figcaption>
         </figure>
-        <figure className="aboutContainer basis-1/4 bg-grey-400">
+        <figure className="aboutContainer basis-1/3 bg-grey-400 flex items-stretch reveal fade-bottom">
           <img
-            className="h-fit w-fit rounded-xl shadow-xl shadow-red-950/40 border border-red-950/40"
-            src={left}
+            className="rounded-xl border border-red-950/40"
+            src={rightPic}
             alt="second travel card"
           />
-          <figcaption className="rounded-2xl text-slate-100 font-semibold text-lg flex justify-end flex-col">
-            <p>Tetuan, Morocco</p>
+          <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
+            <p className="p-3">Rabat, Morocco</p>
           </figcaption>
         </figure>
       </article>

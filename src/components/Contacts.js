@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../components/Contacts.css"
 
 export default function Contacts() {
   const [name, setName] = useState("");
@@ -11,12 +12,30 @@ export default function Contacts() {
     setEmail("");
     setMessage("");
   }
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+
   return (
     <div
       id="contacts"
       className="min-h-screen bg-slate-950 grid grid-cols-12 items-center"
     >
-      <section className=" col-start-2 col-end-8 ml-5">
+      <section className=" col-start-2 col-end-8">
         <div className="">
           <div className="flex flex-wrap ">
             <strong className="text-slate-100 text-9xl mb-12">
@@ -29,7 +48,7 @@ export default function Contacts() {
           </div>
         </div>
       </section>
-      <section className=" col-start-8 col-end-12 content-center">
+      <section className=" col-start-8 col-end-12 content-center reveal fade-right">
         <div className="">
           <div className="w-full">
             <form
@@ -72,7 +91,7 @@ export default function Contacts() {
                   type="submit"
                   id="submit"
                   value="Boom!"
-                  className="m-9 p-2 w-48 h-12 rounded-2xl text-2xl bg-gradient-to-r from-zinc-800 to-gray-700 text-slate-400 duration-100 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:scale-105 hover:shadow-2xl hover:shadow-pink-900"
+                  className="m-9 p-2 w-48 h-12 rounded-md text-2xl bg-gradient-to-r from-zinc-800 to-gray-700 text-slate-400 duration-100 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:scale-105 hover:shadow-2xl hover:shadow-pink-900"
                 ></input>
               </div>
             </form>

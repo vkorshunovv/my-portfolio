@@ -5,7 +5,7 @@ import facebook from "../assets/footer/facebook.png";
 import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
-import "./footer.css";
+import "./Footer.css";
 
 export default function Footer() {
   const [theme, setTheme] = useState(true);

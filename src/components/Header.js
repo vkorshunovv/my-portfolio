@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./header.css";
+import "./Header.css";
 
 export default function Header() {
   const [theme, setTheme] = useState(true);
