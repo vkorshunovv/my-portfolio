@@ -1,50 +1,21 @@
-.reveal {
-    position: relative;
-    opacity: 0;
-  }
-
-  .reveal.active {
-    opacity: 1;
-  }
-  .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
-  }
-  .active.fade-left {
-    animation: fade-left 1s ease-in;
-  }
-  .active.fade-right {
-    animation: fade-right 1s ease-in;
-  }
-
-  @keyframes fade-bottom {
-    0% {
-      transform: translateY(50px);
+  @keyframes reveal-2 {
+    from {
       opacity: 0;
+      filter: blur(1.5rem);
     }
-    100% {
-      transform: translateY(0);
+    to {
       opacity: 1;
+      filter: blur(0);
     }
   }
 
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+  .revealing-image {
 
-  @keyframes fade-right {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform : translateX(0);
-        opacity: 1;
-    }
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+
+    animation: linear reveal-2 both;
+    animation-timeline: --revealing-image;
+
+    animation-range: entry 15% cover 30%;
   }

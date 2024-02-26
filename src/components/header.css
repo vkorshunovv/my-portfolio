@@ -183,3 +183,39 @@
   opacity: 0.7;
   transform: scale(0.45) rotate(35deg);
 }
+
+
+.blured-2 {
+  animation: blured-2 1.5s ease-in;
+}
+
+@keyframes blured-2 {
+  0% {
+    opacity: 0;
+    filter: blur(1.5rem);
+    transform: translateX(50px);
+
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+
+.small-1 {
+  flex-direction: column;
+  position: fixed;
+}
+
+.small-2 {
+  transform: rotate(90deg);
+  padding: 50px 0 50px 0;
+  opacity: 30%;
+  transition: all 0s ease;
+}
+
+.small-2:hover {
+  opacity: 100%;
+}

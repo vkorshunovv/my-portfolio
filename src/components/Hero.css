@@ -5,33 +5,24 @@
 
   .reveal.active {
     opacity: 1;
+  } */
+  
+  .blured-3 {
+    animation: blured-3 2s ease-in;
   }
   
-  .active.fade-left {
-    animation: fade-left 1s ease-in;
-  }
-  .active.fade-right {
-    animation: fade-right 1s ease-in;
-  }
-
-  @keyframes fade-left {
+  @keyframes blured-3 {
     0% {
-      transform: translateX(-100px);
+      transform: translateX(-50px);
       opacity: 0;
+      filter: blur(1.5rem);
     }
     100% {
       transform: translateX(0);
       opacity: 1;
+      filter: blur(0);
     }
   }
 
-  @keyframes fade-right {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform : translateX(0);
-        opacity: 1;
-    }
-  } */
+
+  

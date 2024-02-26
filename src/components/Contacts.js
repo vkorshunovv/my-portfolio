@@ -1,41 +1,51 @@
 import { useState } from "react";
-import "../components/Contacts.css"
+import "../components/Contacts.css";
 
 export default function Contacts() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [buttonText, setButtonText] = useState("Boom!");
+  const myButtonElement = document.getElementById("submit");
 
   function handleSubmit(event) {
     event.preventDefault();
     setName("");
     setEmail("");
     setMessage("");
+    myButtonElement.classList.add("active:scale-100");
+
+    setTimeout(() => {
+      myButtonElement.classList.replace("text-slate-400", "text-emerald-200");
+      myButtonElement.classList.replace("from-zinc-800", "from-teal-800");
+      myButtonElement.classList.replace("to-gray-700", "to-emerald-900");
+      myButtonElement.classList.replace("hover:text-rose-200", "hover:text-emerald-200");
+      myButtonElement.classList.replace("hover:from-rose-950", "hover:from-teal-800");
+      myButtonElement.classList.replace("hover:to-rose-900", "hover:to-emerald-900");
+      myButtonElement.classList.replace("hover:shadow-pink-900", "hover:shadow-teal-900");
+      setButtonText("Submited!");
+    }, 1000);
+
+    
+
+    setTimeout(() => {
+      setButtonText("Boom!");
+      myButtonElement.classList.replace("text-emerald-200", "text-slate-400");
+      myButtonElement.classList.replace("from-teal-800", "from-zinc-800");
+      myButtonElement.classList.replace("to-emerald-900", "to-gray-700");
+      myButtonElement.classList.replace("hover:text-emerald-200", "hover:text-rose-200");
+      myButtonElement.classList.replace("hover:from-teal-800", "hover:from-rose-950");
+      myButtonElement.classList.replace("hover:to-emerald-900", "hover:to-rose-900");
+      myButtonElement.classList.replace("hover:shadow-teal-900", "hover:shadow-pink-900");
+    }, 6000);
   }
-
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
 
   return (
     <div
       id="contacts"
       className="min-h-screen bg-slate-950 grid grid-cols-12 items-center"
     >
-      <section className=" col-start-2 col-end-8">
+      <section className=" col-start-2 col-end-8 revealing-image ">
         <div className="">
           <div className="flex flex-wrap ">
             <strong className="text-slate-100 text-9xl mb-12">
@@ -90,8 +100,8 @@ export default function Contacts() {
                 <input
                   type="submit"
                   id="submit"
-                  value="Boom!"
-                  className="m-9 p-2 w-48 h-12 rounded-md text-2xl bg-gradient-to-r from-zinc-800 to-gray-700 text-slate-400 duration-100 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:scale-105 hover:shadow-2xl hover:shadow-pink-900"
+                  value={buttonText}
+                  className="m-9 p-2 w-48 h-12 rounded-md text-2xl bg-gradient-to-r from-zinc-800 to-gray-700 text-slate-400 duration-100 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 focus:scale-105 hover:scale-105 hover:shadow-2xl hover:shadow-pink-900"
                 ></input>
               </div>
             </form>

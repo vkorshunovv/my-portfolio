@@ -20,7 +20,6 @@ figure {
 
 
 
-
 .reveal {
   position: relative;
   opacity: 0;
@@ -43,10 +42,12 @@ figure {
   0% {
     transform: translateY(50px);
     opacity: 0;
+    filter: blur(1.5rem);
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -71,3 +72,5 @@ figure {
       opacity: 1;
   }
 }
+
+

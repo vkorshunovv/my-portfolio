@@ -15,24 +15,6 @@ import "../components/Education.css"
 
 export default function Education() {
 
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", reveal);
-
   return (
     <div id="education" className="min-h-screen bg-slate-950 ">
       <section className="flex justify-center">
@@ -44,16 +26,16 @@ export default function Education() {
       </section>
       <section className="flex justify-center">
         <div className="flex flex-wrap justify-center gap-8 mt-10 items-center w-8/12">
-          <img src={html5} className="size-32 " alt="Html" />
-          <img src={css3} className="size-32 " alt="Css" />
-          <img src={js} className="size-32 " alt="JavaScript" />
-          <img src={reactLogo} className="size-32 " alt="React" />
-          <img src={bootstrap} className="size-32 " alt="Bootstrap" />
-          <img src={tailwind} className="size-32 " alt="Taiwind" />
-          <img src={git} className="size-32 " alt="Git" />
-          <img src={github} className="size-32 " alt="GitHub" />
-          <img src={figma} className="size-32 " alt="Figma" />
-          <img src={markdown} className="size-32 " alt="Markdown" />
+          <img src={html5} className="size-32 reveal blur-left" alt="Html" />
+          <img src={css3} className="size-32 reveal blur-left" alt="Css" />
+          <img src={js} className="size-32 reveal blur-left" alt="JavaScript" />
+          <img src={reactLogo} className="size-32 reveal blur-left" alt="React" />
+          <img src={bootstrap} className="size-32 reveal blur-left" alt="Bootstrap" />
+          <img src={tailwind} className="size-32 reveal blur-left" alt="Taiwind" />
+          <img src={git} className="size-32 reveal blur-right" alt="Git" />
+          <img src={github} className="size-32 reveal blur-right" alt="GitHub" />
+          <img src={figma} className="size-32 reveal blur-right" alt="Figma" />
+          <img src={markdown} className="size-32 reveal blur-right" alt="Markdown" />
         </div>
       </section>
       <section className="flex justify-end w-11/12 items-end mt-44 ">
@@ -63,11 +45,11 @@ export default function Education() {
           </em>
         </div>
       </section>
-      <section className="mt-28 pb-28 grid grid-cols-12 ">
+      <section className="mt-28 pb-28 grid grid-cols-12">
         <div className="col-start-2 col-end-6 flex m-1 reveal fade-left first">
           <div className="bg-gradient-to-l from-emerald-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64 ">
             <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-5">
+              <div className="px-6">
                 <img
                   src={knutkit}
                   className="size-16 rounded-xl float-right"
@@ -95,7 +77,7 @@ export default function Education() {
         <div className="col-start-6 col-end-9 flex opacity-90 m-1 reveal fade-left second">
           <div className="bg-gradient-to-l from-teal-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64 ">
             <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-5">
+              <div className="px-6">
                 <img
                   src={michigan}
                   className="size-16 rounded-xl float-right"
@@ -116,7 +98,7 @@ export default function Education() {
         <div className="col-start-9 col-end-12 flex opacity-80 mt-1 reveal fade-left third">
           <div className="bg-gradient-to-l from-cyan-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64">
             <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-5 ">
+              <div className="px-6">
                 <img
                   src={meta}
                   className="size-16 rounded-xl float-right "
