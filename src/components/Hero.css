@@ -1,12 +1,3 @@
-/* .reveal {
-    position: relative;
-    opacity: 0;
-  }
-
-  .reveal.active {
-    opacity: 1;
-  } */
-  
   .blured-3 {
     animation: blured-3 2s ease-in;
   }

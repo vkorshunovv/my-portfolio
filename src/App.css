@@ -1,16 +1,24 @@
-body {
+.dark-mode {
     background: linear-gradient(-45deg,#422419, #4c0000, #011923 ,#3b1703, #01241c,rgb(43, 3, 10) );
-    background-size: 600% 100%;
-    animation: gradient 15s linear infinite;
-    animation-direction: alternate;
-}
-@keyframes gradient {
-    0% {background-position: 0%}
-    100% {background-position: 100%}
-}
+        background-size: 600% 100%;
+        animation: gradient 15s linear infinite;
+        animation-direction: alternate;
+      }
 
-html {
-    scroll-behavior: smooth;
-}
+      @keyframes gradient {
+        0% {background-position: 0%}
+        100% {background-position: 100%}
+      }
 
+.light-mode {
+    background: linear-gradient(-45deg,#f1c3b4, #f8c4c4, #cbd2f5 ,#eec7b1, #d1f4cf,rgb(243, 204, 211) );
+        background-size: 600% 100%;
+        animation: gradient 15s linear infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes gradient {
+        0% {background-position: 0%}
+        100% {background-position: 100%}
+      }
 

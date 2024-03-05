@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import me from "../assets/hero/output-onlinepngtools (1).png";
 import "../components/Hero.css";
 
-export default function Hero() {
+export default function Hero({ isDarkMode }) {
   useEffect(() => {
     const onPageLoad = () => {
       console.log("page loaded");
@@ -22,18 +22,38 @@ export default function Hero() {
         id="hero"
         className="col-start-1 col-end-5 space-y-20 ml-5 blured-3 "
       >
-        <h1 className="text-slate-100 text-9xl mt-22 font-extrabold">
-          Greetings<span className="text-red-500 ">.</span>
+        <h1
+          className={`${
+            isDarkMode ? "text-slate-100" : "text-slate-800"
+          } text-9xl mt-22 font-extrabold`}
+        >
+          Greetings
+          <span className={`${isDarkMode ? "text-red-500" : "text-red-800"}`}>
+            .
+          </span>
         </h1>
-        <h2 className="text-slate-100 text-8xl ">
+        <h2
+          className={`${
+            isDarkMode ? "text-slate-100" : "text-slate-800"
+          } text-8xl`}
+        >
           I'm a{" "}
           <span className="font-extrabold uppercase">
-            front-end developer<span className="text-teal-500">.</span>
+            front-end developer
+            <span
+              className={`${isDarkMode ? "text-teal-500" : "text-teal-800"}`}
+            >
+              .
+            </span>
           </span>
         </h2>
       </div>
       <div className="col-start-7 col-end-12 blured-3">
-        <img src={me} className=" opacity-75" alt="My portrait" />
+        <img
+          src={me}
+          className={`${isDarkMode ? "opacity-75" : "opacity-85"}`}
+          alt="My portrait"
+        />
       </div>
     </div>
   );

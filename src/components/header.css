@@ -56,6 +56,13 @@
       }
 
 
+      .darkText {
+        color: #3f3f46
+      }
+
+      .darkText ul li a:hover{
+        color:#3f3f46
+      }
       /* Dark/light mode */
 
       .container {
@@ -83,7 +90,7 @@
     circle,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0) 50%,
-    #f0f0f0 50%
+    #1e293b 50%
   );
 }
 .sun:before {
@@ -94,10 +101,10 @@
   height: 100%;
   background: radial-gradient(
     circle,
-    #f0f0f0 30%,
+    #1e293b 30%,
     rgba(0, 0, 0, 0) 31%,
     rgba(0, 0, 0, 0) 50%,
-    #f0f0f0 50%
+    #1e293b 50%
   );
   transform: rotate(45deg);
 }
@@ -213,7 +220,7 @@
   transform: rotate(90deg);
   padding: 50px 0 50px 0;
   opacity: 30%;
-  transition: all 0s ease;
+  transition-duration: 0s;
 }
 
 .small-2:hover {

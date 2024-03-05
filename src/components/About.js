@@ -1,8 +1,10 @@
 import rightPic from "../assets/IMG_7623.png";
 import leftPic from "../assets/IMG_4479.png";
+import rightPicLight from "../assets/IMG_7173.png";
+import leftPicLight from "../assets/IMG_2706.png";
 import "../components/About.css";
 
-export default function About() {
+export default function About({ isDarkMode }) {
   window.addEventListener("scroll", reveal);
 
   function reveal() {
@@ -22,9 +24,17 @@ export default function About() {
   return (
     <div
       id="about"
-      className="min-h-screen grid grid-cols-12 bg-gradient-to-t from-slate-950 w-auto "
+      className={`min-h-screen grid grid-cols-12 bg-gradient-to-t w-auto ${
+        isDarkMode ? "from-slate-950" : ""
+      }`}
     >
-      <article className="flex flex-wrap h-min justify-center text-slate-100 text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-t from-green-900  rounded-br-2xl rounded-bl-2xl opacity-70 p-6 mt-4 reveal fade-bottom">
+      <article
+        className={`flex flex-wrap h-min justify-center text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-t rounded-br-2xl rounded-bl-2xl opacity-70 p-6 mt-4 reveal fade-bottom ${
+          isDarkMode
+            ? "text-slate-100 from-green-900"
+            : "text-slate-800 from-green-100"
+        } `}
+      >
         <p className="mb-3 pt-4">
           Before I delved into the world of web development, I worked in the
           theater field. This experience gave me a great understanding of
@@ -43,31 +53,35 @@ export default function About() {
           limitless creativity and imagination.
         </p>
         <p className="mt-3 ">
-          Outside work, I enjoy walking near my home at the park, listening to
-          music, exploring the world with my wife, and taking pictures with my
-          phone &#8595;
+          Outside work or study, I enjoy walking at the park, listening to
+          music/podcasts, exploring the world with my wife, and taking pictures
+          with my phone<span className="text-teal-500"> &#8595;</span>
         </p>
       </article>
 
       <article className="flex justify-center content-center col-start-2 col-end-12 mb-12">
         <figure className="aboutContainer basis-2/3 bg-grey-100 mr-6 flex items-stretch reveal fade-bottom">
           <img
-            className="rounded-2xl border border-teal-950/40"
-            src={leftPic}
+            className="rounded-2xl shadow-xl"
+            src={isDarkMode ? leftPic : leftPicLight}
             alt="first travel card"
           />
           <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
-            <p className="p-3">Bruges, Belgium</p>
+            <p className="p-3">{`${
+              isDarkMode ? "Bruges, Belgium" : "Palermo, Italy"
+            }`}</p>
           </figcaption>
         </figure>
         <figure className="aboutContainer basis-1/3 bg-grey-400 flex items-stretch reveal fade-bottom">
           <img
-            className="rounded-xl border border-red-950/40"
-            src={rightPic}
+            className="rounded-xl shadow-xl"
+            src={isDarkMode ? rightPic : rightPicLight}
             alt="second travel card"
           />
           <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
-            <p className="p-3">Rabat, Morocco</p>
+            <p className="p-3">{`${
+              isDarkMode ? "Rabat, Morocco" : "Cappadocia, Türkiye"
+            }`}</p>
           </figcaption>
         </figure>
       </article>

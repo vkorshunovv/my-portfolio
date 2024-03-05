@@ -11,16 +11,29 @@ import markdown from "../assets/markdown.png";
 import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
-import "../components/Education.css"
+import "../components/Education.css";
 
-export default function Education() {
-
+export default function Education({ isDarkMode }) {
   return (
-    <div id="education" className="min-h-screen bg-slate-950 ">
+    <div
+      id="education"
+      className={`min-h-screen ${isDarkMode ? "bg-slate-950" : ""}`}
+    >
       <section className="flex justify-center">
         <div className="m-20">
-          <strong className="text-slate-100 text-8xl ">
-            Languages I speak<span className="text-teal-600 ml-2">...</span>
+          <strong
+            className={`${
+              isDarkMode ? "text-slate-100" : "text-slate-800"
+            } text-8xl`}
+          >
+            Languages I speak
+            <span
+              className={`${
+                isDarkMode ? "text-teal-500" : "text-teal-800"
+              } ml-2`}
+            >
+              ...
+            </span>
           </strong>
         </div>
       </section>
@@ -29,44 +42,93 @@ export default function Education() {
           <img src={html5} className="size-32 reveal blur-left" alt="Html" />
           <img src={css3} className="size-32 reveal blur-left" alt="Css" />
           <img src={js} className="size-32 reveal blur-left" alt="JavaScript" />
-          <img src={reactLogo} className="size-32 reveal blur-left" alt="React" />
-          <img src={bootstrap} className="size-32 reveal blur-left" alt="Bootstrap" />
-          <img src={tailwind} className="size-32 reveal blur-left" alt="Taiwind" />
+          <img
+            src={reactLogo}
+            className="size-32 reveal blur-left"
+            alt="React"
+          />
+          <img
+            src={bootstrap}
+            className="size-32 reveal blur-left"
+            alt="Bootstrap"
+          />
+          <img
+            src={tailwind}
+            className="size-32 reveal blur-left"
+            alt="Taiwind"
+          />
           <img src={git} className="size-32 reveal blur-right" alt="Git" />
-          <img src={github} className="size-32 reveal blur-right" alt="GitHub" />
+          <img
+            src={github}
+            className="size-32 reveal blur-right"
+            alt="GitHub"
+          />
           <img src={figma} className="size-32 reveal blur-right" alt="Figma" />
-          <img src={markdown} className="size-32 reveal blur-right" alt="Markdown" />
+          <img
+            src={markdown}
+            className="size-32 reveal blur-right"
+            alt="Markdown"
+          />
         </div>
       </section>
       <section className="flex justify-end w-11/12 items-end mt-44 ">
-        <div className="animate-bounce bg-gradient-to-r from-teal-950 rounded-tl-full rounded-bl-full p-5">
-          <em className="text-xl text-teal-100">
-            <span className="text-teal-600">...</span>and there will be more!
+        <div
+          className={`animate-bounce bg-gradient-to-r ${
+            isDarkMode ? "from-teal-950" : "from-teal-100"
+          } rounded-tl-full rounded-bl-full p-5`}
+        >
+          <em
+            className={`text-xl ${
+              isDarkMode ? "text-teal-100" : "text-teal-800"
+            } `}
+          >
+            <span
+              className={`${isDarkMode ? "text-teal-500" : "text-teal-800"} `}
+            >
+              ...
+            </span>
+            and there will be more!
           </em>
         </div>
       </section>
-      <section className="mt-28 pb-28 grid grid-cols-12">
+      <section className="mt-28 pb-28 grid grid-cols-12 ">
         <div className="col-start-2 col-end-6 flex m-1 reveal fade-left first">
-          <div className="bg-gradient-to-l from-emerald-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64 ">
-            <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-6">
+          <div
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
+              isDarkMode ? "from-emerald-900" : "from-emerald-300"
+            }`}
+          >
+            <div className="w-full m-5 px-5 flex flex-col ">
+              <div className="px-5">
                 <img
                   src={knutkit}
                   className="size-16 rounded-xl float-right"
                   alt="Knutkit"
                 />
               </div>
-              <div className="px-5 text-balance">
-                <div className="w-full">
+              <div className="px-5 text-pretty">
+                <div
+                  className={`w-full ${
+                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                  } `}
+                >
                   <p className="font-normal mb-4">Aug 2011 - Jun 2016</p>
                   <p className="font-semibold mb-1">
                     Kyiv National I. K. Karpenko-Karyi University of Theatre,
                     Cinema and Television
                   </p>
-                  <p className="font-medium text-slate-500 ">
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                    } `}
+                  >
                     Theatre and film actor
                   </p>
-                  <p className="font-medium text-zinc-500 ">
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                    } `}
+                  >
                     Specialist degree
                   </p>
                 </div>
@@ -75,9 +137,13 @@ export default function Education() {
           </div>
         </div>
         <div className="col-start-6 col-end-9 flex opacity-90 m-1 reveal fade-left second">
-          <div className="bg-gradient-to-l from-teal-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64 ">
-            <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-6">
+          <div
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
+              isDarkMode ? "from-teal-900" : "from-teal-300"
+            }`}
+          >
+            <div className="w-full m-5 px-5 flex flex-col ">
+              <div className="px-5">
                 <img
                   src={michigan}
                   className="size-16 rounded-xl float-right"
@@ -85,20 +151,40 @@ export default function Education() {
                 />
               </div>
               <div className="px-5 text-balance ">
-                <p className="font-normal mb-4">Jul 2023 - Sep 2023</p>
-                <p className="font-semibold mb-1">University of Michigan</p>
-                <p className="font-medium text-slate-500 ">
-                  Web Design for Everybody: Basics of Web Development & Coding
-                </p>
-                <p className="font-medium text-zinc-500">Coursera</p>
+                <div
+                  className={`w-full ${
+                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                  } `}
+                >
+                  <p className="font-normal mb-4">Jul 2023 - Sep 2023</p>
+                  <p className="font-semibold mb-1">University of Michigan</p>
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                    } `}
+                  >
+                    Web Design for Everybody: Basics of Web Development & Coding
+                  </p>
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                    } `}
+                  >
+                    Coursera
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="col-start-9 col-end-12 flex opacity-80 mt-1 reveal fade-left third">
-          <div className="bg-gradient-to-l from-cyan-900 to-slate-950 rounded-tr-2xl rounded-br-2xl h-64">
-            <div className="w-full m-6 px-5 flex flex-col ">
-              <div className="px-6">
+          <div
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
+              isDarkMode ? "from-cyan-900" : "from-cyan-300"
+            }`}
+          >
+            <div className="w-full m-5 px-5 flex flex-col ">
+              <div className="px-5">
                 <img
                   src={meta}
                   className="size-16 rounded-xl float-right "
@@ -106,12 +192,28 @@ export default function Education() {
                 />
               </div>
               <div className="px-5 text-balance">
-                <p className="font-normal mb-4">Sep 2023 - Dec 2023</p>
-                <p className="font-semibold mb-1">Meta</p>
-                <p className="font-medium text-slate-500 ">
-                  Meta Front-End Developer Specialization
-                </p>
-                <p className="font-medium text-zinc-500">Coursera</p>
+                <div
+                  className={`w-full ${
+                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                  } `}
+                >
+                  <p className="font-normal mb-4">Sep 2023 - Dec 2023</p>
+                  <p className="font-semibold mb-1">Meta</p>
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                    } `}
+                  >
+                    Meta Front-End Developer Specialization
+                  </p>
+                  <p
+                    className={`font-medium ${
+                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                    } `}
+                  >
+                    Coursera
+                  </p>
+                </div>
               </div>
             </div>
           </div>
