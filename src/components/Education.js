@@ -15,7 +15,7 @@ import markdownDark from "../assets/markdownDark.png";
 import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
-import "../components/education.css";
+import "./education.css";
 
 export default function Education({ isDarkMode }) {
   return (

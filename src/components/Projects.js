@@ -1,4 +1,4 @@
-import "../components/projects.css";
+import "./projects.css";
 
 export default function Projects({ isDarkMode }) {
   return (
