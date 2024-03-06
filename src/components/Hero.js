@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import me from "../assets/hero/myPhoto.png";
 import meLight from "../assets/hero/myPhotoLight.png";
 
-import "../components/Hero.css";
+import "../components/hero.css";
 
 export default function Hero({ isDarkMode }) {
   useEffect(() => {

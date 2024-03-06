@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../components/Contacts.css";
+import "../components/contacts.css";
 
 export default function Contacts({ isDarkMode }) {
   const [name, setName] = useState("");

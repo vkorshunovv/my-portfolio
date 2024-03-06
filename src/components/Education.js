@@ -15,7 +15,7 @@ import markdownDark from "../assets/markdownDark.png";
 import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
-import "../components/Education.css";
+import "../components/education.css";
 
 export default function Education({ isDarkMode }) {
   return (
@@ -130,7 +130,7 @@ export default function Education({ isDarkMode }) {
                   </p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-zinc-500" : "text-amber-800"
+                      isDarkMode ? "text-zinc-500" : "text-rose-700"
                     } `}
                   >
                     Specialist degree
@@ -175,7 +175,7 @@ export default function Education({ isDarkMode }) {
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"
-                        : "text-amber-800 hover:text-teal-900"
+                        : "text-rose-700 hover:text-teal-900"
                     } `}
                   >
                     Coursera <span>&#8599;</span>
@@ -220,7 +220,7 @@ export default function Education({ isDarkMode }) {
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"
-                        : "text-amber-800 hover:text-teal-900"
+                        : "text-rose-700 hover:text-teal-900"
                     } `}
                   >
                     Coursera <span className="">&#8599;</span>

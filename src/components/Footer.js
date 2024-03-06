@@ -10,7 +10,7 @@ import telegramDark from "../assets/footer/telegramDark.png"
 import linkedinDark from "../assets/footer/linkedinDark.png"
 import githubDark from "../assets/footer/githubDark.png"
 
-import "./Footer.css";
+import "./footer.css";
 
 export default function Footer({ isDarkMode, toggleTheme }) {
   return (

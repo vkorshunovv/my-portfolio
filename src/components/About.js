@@ -2,7 +2,7 @@ import rightPic from "../assets/IMG_7623.png";
 import leftPic from "../assets/IMG_4479.png";
 import rightPicLight from "../assets/IMG_7173.png";
 import leftPicLight from "../assets/IMG_2706.png";
-import "../components/About.css";
+import "../components/about.css";
 
 export default function About({ isDarkMode }) {
   window.addEventListener("scroll", reveal);

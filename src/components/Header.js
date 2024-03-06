@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "./Header.css";
+import "./header.css";
 
 export default function Header({ isDarkMode, toggleTheme }) {
   useEffect(() => {
