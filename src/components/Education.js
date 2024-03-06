@@ -2,12 +2,16 @@ import html5 from "../assets/html5.png";
 import css3 from "../assets/css-3.png";
 import js from "../assets/js.png";
 import reactLogo from "../assets/react.png";
+import reactDark from "../assets/reactDark.png";
 import git from "../assets/git.png";
 import github from "../assets/github-light.png";
+import githubDark from "../assets/github_dark.png";
 import figma from "../assets/figma.png";
 import tailwind from "../assets/tailwind.png";
+import tailwindDark from "../assets/tailwindDark.png";
 import bootstrap from "../assets/bootstrap-5.png";
 import markdown from "../assets/markdown.png";
+import markdownDark from "../assets/markdownDark.png";
 import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
@@ -29,7 +33,7 @@ export default function Education({ isDarkMode }) {
             Languages I speak
             <span
               className={`${
-                isDarkMode ? "text-teal-500" : "text-teal-800"
+                isDarkMode ? "text-teal-500" : "text-teal-400"
               } ml-2`}
             >
               ...
@@ -39,33 +43,33 @@ export default function Education({ isDarkMode }) {
       </section>
       <section className="flex justify-center">
         <div className="flex flex-wrap justify-center gap-8 mt-10 items-center w-8/12">
-          <img src={html5} className="size-32 reveal blur-left" alt="Html" />
-          <img src={css3} className="size-32 reveal blur-left" alt="Css" />
-          <img src={js} className="size-32 reveal blur-left" alt="JavaScript" />
           <img
-            src={reactLogo}
+            src={isDarkMode ? reactLogo : reactDark}
             className="size-32 reveal blur-left"
             alt="React"
           />
+          <img src={html5} className="size-32 reveal blur-left" alt="Html" />
+          <img src={css3} className="size-32 reveal blur-left" alt="Css" />
+          <img src={js} className="size-32 reveal blur-left" alt="JavaScript" />
           <img
             src={bootstrap}
             className="size-32 reveal blur-left"
             alt="Bootstrap"
           />
           <img
-            src={tailwind}
+            src={isDarkMode ? tailwind : tailwindDark}
             className="size-32 reveal blur-left"
             alt="Taiwind"
           />
-          <img src={git} className="size-32 reveal blur-right" alt="Git" />
           <img
-            src={github}
+            src={isDarkMode ? github : githubDark}
             className="size-32 reveal blur-right"
             alt="GitHub"
           />
+          <img src={git} className="size-32 reveal blur-right" alt="Git" />
           <img src={figma} className="size-32 reveal blur-right" alt="Figma" />
           <img
-            src={markdown}
+            src={isDarkMode ? markdown : markdownDark}
             className="size-32 reveal blur-right"
             alt="Markdown"
           />
@@ -79,11 +83,11 @@ export default function Education({ isDarkMode }) {
         >
           <em
             className={`text-xl ${
-              isDarkMode ? "text-teal-100" : "text-teal-800"
+              isDarkMode ? "text-teal-100" : "text-teal-600"
             } `}
           >
             <span
-              className={`${isDarkMode ? "text-teal-500" : "text-teal-800"} `}
+              className={`${isDarkMode ? "text-teal-500" : "text-teal-400"} `}
             >
               ...
             </span>
@@ -94,8 +98,8 @@ export default function Education({ isDarkMode }) {
       <section className="mt-28 pb-28 grid grid-cols-12 ">
         <div className="col-start-2 col-end-6 flex m-1 reveal fade-left first">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
-              isDarkMode ? "from-emerald-900" : "from-emerald-300"
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+              isDarkMode ? "from-emerald-900" : "from-red-400"
             }`}
           >
             <div className="w-full m-5 px-5 flex flex-col ">
@@ -119,14 +123,14 @@ export default function Education({ isDarkMode }) {
                   </p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                      isDarkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Theatre and film actor
                   </p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                      isDarkMode ? "text-zinc-500" : "text-amber-800"
                     } `}
                   >
                     Specialist degree
@@ -138,8 +142,8 @@ export default function Education({ isDarkMode }) {
         </div>
         <div className="col-start-6 col-end-9 flex opacity-90 m-1 reveal fade-left second">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
-              isDarkMode ? "from-teal-900" : "from-teal-300"
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+              isDarkMode ? "from-teal-900" : "from-red-300"
             }`}
           >
             <div className="w-full m-5 px-5 flex flex-col ">
@@ -160,18 +164,22 @@ export default function Education({ isDarkMode }) {
                   <p className="font-semibold mb-1">University of Michigan</p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                      isDarkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Web Design for Everybody: Basics of Web Development & Coding
                   </p>
-                  <p
+                  <a
+                    href="https://coursera.org/share/79bbad2c00ec13c74aee1624d18a0ffa"
+                    target="_blank"
                     className={`font-medium ${
-                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                      isDarkMode
+                        ? "text-zinc-500 hover:text-teal-500"
+                        : "text-amber-800 hover:text-teal-900"
                     } `}
                   >
-                    Coursera
-                  </p>
+                    Coursera <span>&#8599;</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -179,8 +187,8 @@ export default function Education({ isDarkMode }) {
         </div>
         <div className="col-start-9 col-end-12 flex opacity-80 mt-1 reveal fade-left third">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 ${
-              isDarkMode ? "from-cyan-900" : "from-cyan-300"
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+              isDarkMode ? "from-cyan-900" : "from-red-200"
             }`}
           >
             <div className="w-full m-5 px-5 flex flex-col ">
@@ -201,18 +209,22 @@ export default function Education({ isDarkMode }) {
                   <p className="font-semibold mb-1">Meta</p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-slate-700"
+                      isDarkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Meta Front-End Developer Specialization
                   </p>
-                  <p
+                  <a
+                    href="https://coursera.org/share/596a9e5e8c8a3804341a021dfa56be2a"
+                    target="_blank"
                     className={`font-medium ${
-                      isDarkMode ? "text-zinc-500" : "text-zinc-700"
+                      isDarkMode
+                        ? "text-zinc-500 hover:text-teal-500"
+                        : "text-amber-800 hover:text-teal-900"
                     } `}
                   >
-                    Coursera
-                  </p>
+                    Coursera <span className="">&#8599;</span>
+                  </a>
                 </div>
               </div>
             </div>

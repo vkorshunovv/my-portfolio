@@ -13,14 +13,14 @@ export default function Projects({ isDarkMode }) {
           <strong className=" text-8xl">
             My Projects
             <span
-              className={`${isDarkMode ? "text-red-500" : "text-red-800"} `}
+              className={`${isDarkMode ? "text-red-500" : "text-red-400"} `}
             >
               *
             </span>
             <br />
             <span className="text-xl justify-center flex text-slate-400 mt-3 blur-sm transition delay-100 duration-300 hover:blur-none hover:cursor-pointer">
               <span
-                className={`${isDarkMode ? "text-red-500" : "text-red-800"} `}
+                className={`${isDarkMode ? "text-red-500" : "text-red-400"} `}
               >
                 *
               </span>

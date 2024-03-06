@@ -29,7 +29,7 @@ export default function About({ isDarkMode }) {
       }`}
     >
       <article
-        className={`flex flex-wrap h-min justify-center text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-t rounded-br-2xl rounded-bl-2xl opacity-70 p-6 mt-4 reveal fade-bottom ${
+        className={`flex flex-wrap h-min justify-center text-xl col-start-7 col-end-12 font-medium justify-between text-pretty mb-12 bg-gradient-to-t rounded-br-2xl rounded-bl-2xl opacity-70 p-6 mt-4 reveal fade-bottom shadow-4xl ${
           isDarkMode
             ? "text-slate-100 from-green-900"
             : "text-slate-800 from-green-100"

@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import me from "../assets/hero/output-onlinepngtools (1).png";
+import me from "../assets/hero/myPhoto.png";
+import meLight from "../assets/hero/myPhotoLight.png";
+
 import "../components/Hero.css";
 
 export default function Hero({ isDarkMode }) {
@@ -28,7 +30,7 @@ export default function Hero({ isDarkMode }) {
           } text-9xl mt-22 font-extrabold`}
         >
           Greetings
-          <span className={`${isDarkMode ? "text-red-500" : "text-red-800"}`}>
+          <span className={`${isDarkMode ? "text-red-500" : "text-red-400"}`}>
             .
           </span>
         </h1>
@@ -41,7 +43,9 @@ export default function Hero({ isDarkMode }) {
           <span className="font-extrabold uppercase">
             front-end developer
             <span
-              className={`${isDarkMode ? "text-teal-500" : "text-teal-800"}`}
+              className={`${
+                isDarkMode ? "text-teal-500" : "text-teal-400"
+              } text-9xl`}
             >
               .
             </span>
@@ -50,7 +54,7 @@ export default function Hero({ isDarkMode }) {
       </div>
       <div className="col-start-7 col-end-12 blured-3">
         <img
-          src={me}
+          src={isDarkMode ? me : meLight}
           className={`${isDarkMode ? "opacity-75" : "opacity-85"}`}
           alt="My portrait"
         />

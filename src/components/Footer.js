@@ -3,6 +3,13 @@ import facebook from "../assets/footer/facebook.png";
 import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
+
+import instagramDark from "../assets/footer/instagramDark.png"
+import facebookDark from "../assets/footer/facebookDark.png"
+import telegramDark from "../assets/footer/telegramDark.png"
+import linkedinDark from "../assets/footer/linkedinDark.png"
+import githubDark from "../assets/footer/githubDark.png"
+
 import "./Footer.css";
 
 export default function Footer({ isDarkMode, toggleTheme }) {
@@ -19,19 +26,19 @@ export default function Footer({ isDarkMode, toggleTheme }) {
         <section className="col-start-2 col-end-5 flex justify-start mt-24 mb-4 gap-2 ">
           <a href="https://www.instagram.com/vkorshunovv" target="_blank">
             <img
-              src={instagram}
+              src={isDarkMode ? instagram : instagramDark}
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
           <a href="https://www.facebook.com/victor.korshunow" target="_blank">
             <img
-              src={facebook}
+              src={isDarkMode ? facebook : facebookDark}
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
           <a href="https://t.me/korshunow" target="_blank">
             <img
-              src={telegram}
+              src={isDarkMode ? telegram : telegramDark}
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
@@ -40,13 +47,13 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             target="_blank"
           >
             <img
-              src={linkedin}
+              src={isDarkMode ? linkedin : linkedinDark}
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
           <a href="https://github.com/vkorshunovv" target="_blank">
             <img
-              src={github}
+              src={isDarkMode ? github : githubDark}
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>

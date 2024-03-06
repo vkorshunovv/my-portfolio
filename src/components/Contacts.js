@@ -77,7 +77,7 @@ export default function Contacts({ isDarkMode }) {
           >
             Lets talk
             <span
-              className={`${isDarkMode ? "text-teal-500" : "text-teal-800"}`}
+              className={`${isDarkMode ? "text-teal-500" : "text-teal-400"}`}
             >
               .
             </span>
@@ -88,7 +88,11 @@ export default function Contacts({ isDarkMode }) {
             } text-8xl`}
           >
             I'm waiting for your thoughts, questions, or just a friendly hello
-            <span className={`${isDarkMode ? "text-red-500" : "text-red-800"}`}>
+            <span
+              className={`${
+                isDarkMode ? "text-red-500" : "text-red-400"
+              } text-9xl`}
+            >
               .
             </span>
           </strong>
@@ -110,7 +114,7 @@ export default function Contacts({ isDarkMode }) {
               className={`w-full m-1 p-3 rounded-lg  shadow-2xl ${
                 isDarkMode
                   ? "bg-teal-800 focus:bg-slate-950"
-                  : "bg-red-100 focus:bg-slate-200"
+                  : "bg-red-100 focus:bg-red-100"
               } `}
               onChange={(e) => setName(e.target.value)}
               value={name}
@@ -124,7 +128,7 @@ export default function Contacts({ isDarkMode }) {
               className={`w-full m-1 p-3 rounded-lg  shadow-2xl ${
                 isDarkMode
                   ? "bg-teal-900 focus:bg-slate-950"
-                  : "bg-red-200 focus:bg-slate-200"
+                  : "bg-red-200 focus:bg-red-100"
               } `}
               onChange={(e) => setEmail(e.target.value)}
               value={email}
@@ -141,7 +145,7 @@ export default function Contacts({ isDarkMode }) {
               className={`w-full m-1 p-3 rounded-lg size-48 resize-none shadow-2xl ${
                 isDarkMode
                   ? "bg-teal-950 focus:bg-slate-950"
-                  : "bg-red-300 focus:bg-slate-200"
+                  : "bg-red-300 focus:bg-red-100"
               } `}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
@@ -153,7 +157,7 @@ export default function Contacts({ isDarkMode }) {
                 className={`m-9 p-2 w-48 h-12 rounded-md text-2xl bg-gradient-to-r duration-100 ${
                   isDarkMode
                     ? "from-zinc-800 to-gray-700 text-slate-400 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:shadow-pink-900"
-                    : "from-zinc-400 to-stone-400 text-slate-800 hover:text-rose-900 hover:from-rose-400 hover:to-rose-300 hover:shadow-pink-400"
+                    : "from-zinc-400 to-stone-400 text-slate-800 hover:text-teal-700 hover:from-teal-200 hover:to-teal-100 hover:shadow-teal-300"
                 }  focus:scale-105 hover:scale-105 hover:shadow-2xl  active:scale-95`}
               ></input>
             </div>
