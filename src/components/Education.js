@@ -172,6 +172,7 @@ export default function Education({ isDarkMode }) {
                   <a
                     href="https://coursera.org/share/79bbad2c00ec13c74aee1624d18a0ffa"
                     target="_blank"
+                    rel="noreferrer noopener"
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"
@@ -217,6 +218,7 @@ export default function Education({ isDarkMode }) {
                   <a
                     href="https://coursera.org/share/596a9e5e8c8a3804341a021dfa56be2a"
                     target="_blank"
+                    rel="noreferrer noopener"
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"

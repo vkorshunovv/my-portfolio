@@ -4,11 +4,11 @@ import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
 
-import instagramDark from "../assets/footer/instagramDark.png"
-import facebookDark from "../assets/footer/facebookDark.png"
-import telegramDark from "../assets/footer/telegramDark.png"
-import linkedinDark from "../assets/footer/linkedinDark.png"
-import githubDark from "../assets/footer/githubDark.png"
+import instagramDark from "../assets/footer/instagramDark.png";
+import facebookDark from "../assets/footer/facebookDark.png";
+import telegramDark from "../assets/footer/telegramDark.png";
+import linkedinDark from "../assets/footer/linkedinDark.png";
+import githubDark from "../assets/footer/githubDark.png";
 
 import "./footer.css";
 
@@ -24,36 +24,58 @@ export default function Footer({ isDarkMode, toggleTheme }) {
     >
       <div className="flex w-full grid grid-cols-12 items-center">
         <section className="col-start-2 col-end-5 flex justify-start mt-24 mb-4 gap-2 ">
-          <a href="https://www.instagram.com/vkorshunovv" target="_blank">
+          <a
+            href="https://www.instagram.com/vkorshunovv"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img
               src={isDarkMode ? instagram : instagramDark}
+              alt="Instagram"
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
-          <a href="https://www.facebook.com/victor.korshunow" target="_blank">
+          <a
+            href="https://www.facebook.com/victor.korshunow"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img
               src={isDarkMode ? facebook : facebookDark}
+              alt="facebook"
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
-          <a href="https://t.me/korshunow" target="_blank">
+          <a
+            href="https://t.me/korshunow"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img
               src={isDarkMode ? telegram : telegramDark}
+              alt="Telegram"
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
           <a
             href="https://www.linkedin.com/in/viktor-korshunov-6379b6282/"
             target="_blank"
+            rel="noreferrer noopener"
           >
             <img
               src={isDarkMode ? linkedin : linkedinDark}
+              alt="LinkedIn"
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>
-          <a href="https://github.com/vkorshunovv" target="_blank">
+          <a
+            href="https://github.com/vkorshunovv"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img
               src={isDarkMode ? github : githubDark}
+              alt="GitHub"
               className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
             />
           </a>

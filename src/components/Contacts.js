@@ -34,7 +34,7 @@ export default function Contacts({ isDarkMode }) {
         "hover:shadow-pink-900",
         "hover:shadow-teal-900"
       );
-      setButtonText("Submited" + " " + String.fromCharCode(9825));
+      setButtonText(`Submited ${String.fromCharCode(9825)}`);
     }, 1000);
 
     setTimeout(() => {
