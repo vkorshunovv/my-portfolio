@@ -4,11 +4,11 @@ import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
 
-import instagramDark from "../assets/footer/instagramDark.png";
-import facebookDark from "../assets/footer/facebookDark.png";
-import telegramDark from "../assets/footer/telegramDark.png";
-import linkedinDark from "../assets/footer/linkedinDark.png";
-import githubDark from "../assets/footer/githubDark.png";
+// import instagramDark from "../assets/footer/instagramDark.png";
+// import facebookDark from "../assets/footer/facebookDark.png";
+// import telegramDark from "../assets/footer/telegramDark.png";
+// import linkedinDark from "../assets/footer/linkedinDark.png";
+// import githubDark from "../assets/footer/githubDark.png";
 
 import "./footer.css";
 
@@ -30,9 +30,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             rel="noreferrer noopener"
           >
             <img
-              src={isDarkMode ? instagram : instagramDark}
+              src={instagram}
               alt="Instagram"
-              className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                isDarkMode ? "" : "invert"
+              }`}
             />
           </a>
           <a
@@ -41,9 +43,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             rel="noreferrer noopener"
           >
             <img
-              src={isDarkMode ? facebook : facebookDark}
+              src={facebook}
               alt="facebook"
-              className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                isDarkMode ? "" : "invert"
+              }`}
             />
           </a>
           <a
@@ -52,9 +56,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             rel="noreferrer noopener"
           >
             <img
-              src={isDarkMode ? telegram : telegramDark}
+              src={telegram}
               alt="Telegram"
-              className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                isDarkMode ? "" : "invert"
+              }`}
             />
           </a>
           <a
@@ -63,9 +69,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             rel="noreferrer noopener"
           >
             <img
-              src={isDarkMode ? linkedin : linkedinDark}
+              src={linkedin}
               alt="LinkedIn"
-              className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                isDarkMode ? "" : "invert"
+              }`}
             />
           </a>
           <a
@@ -74,9 +82,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             rel="noreferrer noopener"
           >
             <img
-              src={isDarkMode ? github : githubDark}
+              src={github}
               alt="GitHub"
-              className="size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                isDarkMode ? "" : "invert"
+              }`}
             />
           </a>
         </section>
