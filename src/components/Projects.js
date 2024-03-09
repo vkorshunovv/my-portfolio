@@ -9,8 +9,8 @@ export default function Projects({ isDarkMode }) {
       }`}
     >
       <div className="flex justify-center">
-        <div className="m-20">
-          <strong className=" text-8xl">
+        <div className="mt-10 lg:mt-0 lg:m-20">
+          <strong className="text-6xl lg:text-8xl">
             My Projects
             <span
               className={`${isDarkMode ? "text-red-500" : "text-red-400"} `}
@@ -29,55 +29,49 @@ export default function Projects({ isDarkMode }) {
           </strong>
         </div>
       </div>
-      <div className="grid grid-cols-12 grid-rows-3 ">
-        <section className="col-start-2 col-end-12 row-span-1 flex justify-between items-center ">
+      <div className="grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-3 space-y-6 lg:space-y-0 pb-36">
+        <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-12 row-span-1 block lg:flex justify-between items-center pt-20 m-4 lg:m-0 lg:pt-0 space-y-5 lg:space-y-0 ">
           <div
-            className={`basis-5/12 bg-gradient-to-l rounded-2xl mr-6 size-48 blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-5/12 bg-gradient-to-l rounded-2xl lg:mr-6 size-24 lg:size-48 blur-2xl reveal fade-bottom ${
               isDarkMode
                 ? "from-cyan-950 to-emerald-950"
                 : "from-red-300 to-rose-200"
             }`}
-          >
-            <div className="flex justify-start flex-wrap animate-pulse"></div>
-          </div>
+          ></div>
           <div
-            className={`basis-7/12 bg-gradient-to-r rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-7/12 bg-gradient-to-r rounded-2xl lg:ml-6 size-48 lg:size-96 flex flex-wrap justify-start blur-2xl  reveal fade-bottom ${
               isDarkMode
                 ? "from-emerald-950 to-cyan-950"
                 : "from-rose-200 to-red-300"
             }`}
           ></div>
         </section>
-        <section className="col-start-2 col-end-12 row-span-2 flex justify-between items-center">
+        <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-12  row-span-2 block lg:flex justify-between items-center pt-20 m-4 lg:m-0 lg:pt-0 space-y-5 lg:space-y-0">
           <div
-            className={`basis-5/12 bg-gradient-to-l rounded-2xl mr-6 size-48 blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-5/12 bg-gradient-to-l rounded-2xl lg:mr-6 size-24 lg:size-48 blur-2xl reveal fade-bottom ${
               isDarkMode
                 ? "from-cyan-950 to-emerald-950"
                 : "from-red-300 to-rose-200"
             }`}
-          >
-            <div className="flex justify-start flex-wrap animate-pulse"></div>
-          </div>
+          ></div>
           <div
-            className={`basis-7/12 bg-gradient-to-r rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-7/12 bg-gradient-to-r rounded-2xl lg:ml-6 size-48 lg:size-96 flex flex-wrap justify-start blur-2xl reveal fade-bottom ${
               isDarkMode
                 ? "from-emerald-950 to-cyan-950"
                 : "from-rose-200 to-red-300"
             }`}
           ></div>
         </section>
-        <section className="col-start-2 col-end-12 row-span-3 flex justify-between items-center mb-36">
+        <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-12  row-span-3 block lg:flex justify-between items-center pt-20 m-4 lg:m-0 lg:pt-0 space-y-5 lg:space-y-0 ">
           <div
-            className={`basis-5/12 bg-gradient-to-l rounded-2xl mr-6 size-48 blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-5/12 bg-gradient-to-l rounded-2xl lg:mr-6 size-24 lg:size-48 blur-2xl reveal fade-bottom ${
               isDarkMode
                 ? "from-cyan-950 to-emerald-950"
                 : "from-red-300 to-rose-200"
             }`}
-          >
-            <div className="flex justify-start flex-wrap animate-pulse "></div>
-          </div>
+          ></div>
           <div
-            className={`basis-7/12 bg-gradient-to-r rounded-2xl ml-6 size-96 flex flex-wrap justify-start blur-2xl reveal fade-bottom ${
+            className={`w-full lg:basis-7/12 bg-gradient-to-r rounded-2xl lg:ml-6 size-48 lg:size-96 flex flex-wrap justify-start blur-2xl reveal fade-bottom ${
               isDarkMode
                 ? "from-emerald-950 to-cyan-950"
                 : "from-rose-200 to-red-300"

@@ -24,11 +24,11 @@ export default function Education({ isDarkMode }) {
       className={`min-h-screen ${isDarkMode ? "bg-slate-950" : ""}`}
     >
       <section className="flex justify-center">
-        <div className="m-20">
+        <div className="m-9 lg:m-20">
           <strong
             className={`${
               isDarkMode ? "text-slate-100" : "text-slate-800"
-            } text-8xl`}
+            } text-6xl lg:text-8xl `}
           >
             Languages I speak
             <span
@@ -41,43 +41,43 @@ export default function Education({ isDarkMode }) {
           </strong>
         </div>
       </section>
-      <section className="flex justify-center">
-        <div className="flex flex-wrap justify-center gap-8 mt-10 items-center w-8/12">
+      <section className="flex justify-center px-4">
+        <div className="flex flex-wrap justify-center gap-4 lg:gap-8 mt-11 items-center lg:w-8/12">
           <img
             src={isDarkMode ? reactLogo : reactDark}
-            className="size-32 reveal blur-left"
+            className="size-16 lg:size-32 reveal blur-left"
             alt="React"
           />
-          <img src={html5} className="size-32 reveal blur-left" alt="Html" />
-          <img src={css3} className="size-32 reveal blur-left" alt="Css" />
-          <img src={js} className="size-32 reveal blur-left" alt="JavaScript" />
+          <img src={html5} className="size-16 lg:size-32 reveal blur-left" alt="Html" />
+          <img src={css3} className="size-16 lg:size-32 reveal blur-left" alt="Css" />
+          <img src={js} className="size-16 lg:size-32 reveal blur-left" alt="JavaScript" />
           <img
             src={bootstrap}
-            className="size-32 reveal blur-left"
+            className="size-16 lg:size-32 reveal blur-left"
             alt="Bootstrap"
           />
           <img
             src={isDarkMode ? tailwind : tailwindDark}
-            className="size-32 reveal blur-left"
+            className="size-16 lg:size-32 reveal blur-left"
             alt="Taiwind"
           />
           <img
             src={isDarkMode ? github : githubDark}
-            className="size-32 reveal blur-right"
+            className="size-16 lg:size-32 reveal blur-right"
             alt="GitHub"
           />
-          <img src={git} className="size-32 reveal blur-right" alt="Git" />
-          <img src={figma} className="size-32 reveal blur-right" alt="Figma" />
+          <img src={git} className="size-16 lg:size-32 reveal blur-right" alt="Git" />
+          <img src={figma} className="size-16 lg:size-32 reveal blur-right" alt="Figma" />
           <img
             src={isDarkMode ? markdown : markdownDark}
-            className="size-32 reveal blur-right"
+            className="size-16 lg:size-32 reveal blur-right"
             alt="Markdown"
           />
         </div>
       </section>
-      <section className="flex justify-end w-11/12 items-end mt-44 ">
+      <section className="flex justify-end lg:w-11/12 items-end mt-20 lg:mt-44 ">
         <div
-          className={`animate-bounce bg-gradient-to-r ${
+          className={`lg:animate-bounce bg-gradient-to-r ${
             isDarkMode ? "from-teal-950" : "from-teal-100"
           } rounded-tl-full rounded-bl-full p-5`}
         >
@@ -95,19 +95,19 @@ export default function Education({ isDarkMode }) {
           </em>
         </div>
       </section>
-      <section className="mt-28 pb-28 grid grid-cols-12 ">
-        <div className="col-start-2 col-end-6 flex m-1 reveal fade-left first">
+      <section className="mt-20 lg:mt-28 pb-10 lg:pb-28 flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 ">
+        <div className="col-start-2 col-end-6 flex m-3 lg:m-1 ml-0 reveal fade-left first">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
               isDarkMode ? "from-emerald-900" : "from-red-400"
             }`}
           >
-            <div className="w-full m-5 px-5 flex flex-col ">
-              <div className="px-5">
+            <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
+              <div className="px-0 lg:px-5 pt-3 lg:pt-0">
                 <img
                   src={knutkit}
                   className="size-16 rounded-xl float-right"
-                  alt="Knutkit"
+                  alt="Knutkit University"
                 />
               </div>
               <div className="px-5 text-pretty">
@@ -140,21 +140,21 @@ export default function Education({ isDarkMode }) {
             </div>
           </div>
         </div>
-        <div className="col-start-6 col-end-9 flex opacity-90 m-1 reveal fade-left second">
+        <div className="col-start-6 col-end-9 flex opacity-90 m-3 lg:m-1 ml-0 reveal fade-left second">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
               isDarkMode ? "from-teal-900" : "from-red-300"
             }`}
           >
-            <div className="w-full m-5 px-5 flex flex-col ">
-              <div className="px-5">
+            <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
+              <div className="px-0 lg:px-5 pt-3 lg:pt-0">
                 <img
                   src={michigan}
                   className="size-16 rounded-xl float-right"
                   alt="University of Michigan"
                 />
               </div>
-              <div className="px-5 text-balance ">
+              <div className="px-5 text-balance">
                 <div
                   className={`w-full ${
                     isDarkMode ? "text-slate-300" : "text-slate-800"
@@ -186,14 +186,14 @@ export default function Education({ isDarkMode }) {
             </div>
           </div>
         </div>
-        <div className="col-start-9 col-end-12 flex opacity-80 mt-1 reveal fade-left third">
+        <div className="col-start-9 col-end-12 flex opacity-80 m-3 lg:m-1 ml-0 reveal fade-left third">
           <div
-            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-3xl ${
+            className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
               isDarkMode ? "from-cyan-900" : "from-red-200"
             }`}
           >
-            <div className="w-full m-5 px-5 flex flex-col ">
-              <div className="px-5">
+            <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
+              <div className="px-0 lg:px-5 pt-3 lg:pt-0">
                 <img
                   src={meta}
                   className="size-16 rounded-xl float-right "

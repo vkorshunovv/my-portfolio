@@ -4,12 +4,6 @@ import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
 
-// import instagramDark from "../assets/footer/instagramDark.png";
-// import facebookDark from "../assets/footer/facebookDark.png";
-// import telegramDark from "../assets/footer/telegramDark.png";
-// import linkedinDark from "../assets/footer/linkedinDark.png";
-// import githubDark from "../assets/footer/githubDark.png";
-
 import "./footer.css";
 
 export default function Footer({ isDarkMode, toggleTheme }) {
@@ -19,11 +13,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
       className={`min-h-36 ${
         isDarkMode
           ? "from-slate-950 to-slate-900 bg-gradient-to-b"
-          : "bg-gradient-to-t "
+          : "bg-gradient-to-t"
       }`}
     >
-      <div className="flex w-full grid grid-cols-12 items-center">
-        <section className="col-start-2 col-end-5 flex justify-start mt-24 mb-4 gap-2 ">
+      <div className="w-full grid grid-cols-4 lg:grid-cols-12 items-center">
+        <section className="col-start-1 lg:col-start-2 col-end-5 flex space-x-1 lg:space-x-0 justify-start mt-24 mb-4 gap-2 mx-5 lg:mx-0">
           <a
             href="https://www.instagram.com/vkorshunovv"
             target="_blank"
@@ -93,15 +87,19 @@ export default function Footer({ isDarkMode, toggleTheme }) {
         <section
           className={`${
             isDarkMode ? "text-slate-100" : "text-slate-800"
-          } mt-24 flex col-start-5 col-end-9 justify-end`}
+          } mt-8 lg:mt-24 flex col-start-1 lg:col-start-5 col-end-5 lg:col-end-10 justify-start lg:justify-center mx-5 lg:mx-0 text-sm lg:text-md`}
         >
-          <p>
-            &#169; 2024 | Designed & Developed{" "}
-            <span className="text-red-500">*with love*</span> by
+          <p className="pl-2 lg:pl-0 flex block flex-col lg:flex-row justify-start">
+            &#169; 2024 | Designed & Developed
+            <span className="text-red-500 hidden lg:block">
+              {" "}
+              *with love*
+            </span>{" "}
+            by
             <span className="font-semibold"> Viktor Korshunov</span>
           </p>
         </section>
-        <section className=" mt-24 mb-4 flex col-start-9 col-end-12 justify-end">
+        <section className=" mt-8 lg:mt-24 mb-4 flex col-start-1 lg:col-start-10 col-end-5 lg:col-end-12 justify-start lg:justify-end mx-5 lg:mx-0">
           <button
             onClick={toggleTheme}
             className="container"

@@ -34,10 +34,10 @@ export default function Header({ isDarkMode, toggleTheme }) {
   return (
     <div
       id="header"
-      className="grid grid-cols-12 items-center justify-items-end pt-6"
+      className="grid grid-cols-4 lg:grid-cols-12 items-center justify-items-end pt-6"
     >
       <div
-        className={`text-l font-light col-start-7 col-end-12 blured-2 ${
+        className={`text-l font-light col-start-7 col-end-12 blured-2 hidden lg:flex ${
           isDarkMode ? "text-slate-400" : "darkText"
         } `}
       >
@@ -61,7 +61,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
       </div>
       <button
         onClick={toggleTheme}
-        className="container col-start-12 mr-9 blured-2"
+        className="container lg:col-start-12 mr-9 blured-2"
         aria-label="Toggle color mode"
         title="Toggle color mode"
       >

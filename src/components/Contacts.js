@@ -66,14 +66,14 @@ export default function Contacts({ isDarkMode }) {
       id="contacts"
       className={`min-h-screen ${
         isDarkMode ? "bg-slate-950" : ""
-      } grid grid-cols-12 items-center`}
+      } grid grid-cols-4 lg:grid-cols-12 items-center`}
     >
-      <section className=" col-start-2 col-end-8 revealing-image ">
+      <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-8 revealing-image mx-5 lg:mx-0">
         <div className="flex flex-wrap ">
           <strong
             className={`${
               isDarkMode ? "text-slate-100" : "text-slate-800"
-            } text-9xl mb-12`}
+            } text-7xl lg:text-9xl mb-12`}
           >
             Lets talk
             <span
@@ -85,20 +85,20 @@ export default function Contacts({ isDarkMode }) {
           <strong
             className={`${
               isDarkMode ? "text-slate-100" : "text-slate-800"
-            } text-8xl`}
+            } text-6xl lg:text-8xl`}
           >
             I'm waiting for your thoughts, questions, or just a friendly hello
             <span
               className={`${
                 isDarkMode ? "text-red-500" : "text-red-400"
-              } text-9xl`}
+              } text-6xl lg:text-9xl`}
             >
               .
             </span>
           </strong>
         </div>
       </section>
-      <section className=" col-start-8 col-end-12 content-center reveal fade-right">
+      <section className="col-start-1 lg:col-start-8 col-end-5 lg:col-end-12 content-center reveal fade-right px-5 lg:px-0 pt-10 lg:pt-0">
         <div className="w-full">
           <form
             className={`flex flex-wrap justify-end ${

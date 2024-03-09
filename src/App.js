@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div
-      className={`${isDarkMode ? "dark-mode" : "light-mode"}`}
+      className={`overscroll-x-none w-screen ${isDarkMode ? "dark-mode" : "light-mode"}`}
     >
       <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Hero isDarkMode={isDarkMode} />

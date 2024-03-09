@@ -19,40 +19,47 @@ export default function Hero({ isDarkMode }) {
   }, []);
 
   return (
-    <div className="min-h-screen grid grid-cols-12 items-center">
+    <div className="min-h-screen grid grid-cols-4 lg:grid-cols-12 lg:items-center">
       <div
         id="hero"
-        className="col-start-1 col-end-5 space-y-20 ml-5 blured-3 "
+        className="col-start-1 col-end-5 lg:space-y-20 ml-5 pt-20 lg:pt-0 pr-3 lg:pr-0 blured-3 "
       >
         <h1
           className={`${
             isDarkMode ? "text-slate-100" : "text-slate-800"
-          } text-9xl mt-22 font-extrabold`}
+          } text-6xl lg:text-9xl font-extrabold`}
         >
           Greetings
-          <span className={`${isDarkMode ? "text-red-500" : "text-red-400"}`}>
+          <span
+            className={`text-6xl lg:text-9xl ${
+              isDarkMode ? "text-red-500" : "text-red-400"
+            }`}
+          >
             .
           </span>
         </h1>
         <h2
-          className={`${
+          className={` pt-5 ${
             isDarkMode ? "text-slate-100" : "text-slate-800"
-          } text-8xl`}
+          } text-5xl lg:text-8xl`}
         >
-          I'm a{" "}
-          <span className="font-extrabold uppercase">
-            front-end developer
-            <span
-              className={`${
-                isDarkMode ? "text-teal-500" : "text-teal-400"
-              } text-9xl`}
-            >
-              .
-            </span>
-          </span>
+          <div className="flex">I'm a</div>
+          <div className="font-extrabold uppercase block">
+            {""} front-end{" "}
+            <div>
+              developer
+              <span
+                className={`${
+                  isDarkMode ? "text-teal-500" : "text-teal-400"
+                } text-6xl lg:text-8xl`}
+              >
+                .
+              </span>
+            </div>
+          </div>
         </h2>
       </div>
-      <div className="col-start-7 col-end-12 blured-3">
+      <div className="col-start-1 lg:col-start-7 col-end-5 lg:col-end-12 blured-3">
         <img
           src={isDarkMode ? me : meLight}
           className={`${isDarkMode ? "opacity-75" : "opacity-85"}`}
