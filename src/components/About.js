@@ -3,6 +3,7 @@ import leftPic from "../assets/IMG_4479.png";
 import rightPicLight from "../assets/IMG_7173.png";
 import leftPicLight from "../assets/IMG_2706.png";
 import "./about.css";
+import React  from 'react';
 
 export default function About({ isDarkMode }) {
   window.addEventListener("scroll", reveal);
@@ -48,7 +49,7 @@ export default function About({ isDarkMode }) {
           technology, reading a huge number of magazines about the latest
           technological innovations and spending a lot of time on the computer,
           exploring its capabilities. When I first tried HTML, it was like love
-          at first sight. CSS has finally won me over &#129512;. The ability to
+          at first sight. CSS has finally won me over <span role="img" aria-label="Bomb">&#129512;</span>. The ability to
           instantly see the result of your work opens up the potential for
           limitless creativity and imagination.
         </p>

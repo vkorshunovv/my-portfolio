@@ -16,6 +16,7 @@ import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
 import "./education.css";
+import React  from 'react';
 
 export default function Education({ isDarkMode }) {
   return (

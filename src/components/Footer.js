@@ -3,6 +3,7 @@ import facebook from "../assets/footer/facebook.png";
 import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
+import React from "react";
 
 import "./footer.css";
 
@@ -91,12 +92,12 @@ export default function Footer({ isDarkMode, toggleTheme }) {
         >
           <p className="pl-2 lg:pl-0 flex block flex-col lg:flex-row justify-start">
             &#169; 2024 | Designed & Developed
-            <span className="text-red-500 hidden lg:block">
+            <span className="text-red-500 hidden lg:block lg:px-1">
               {" "}
               *with love*
             </span>{" "}
             by
-            <span className="font-semibold"> Viktor Korshunov</span>
+            <span className="font-semibold lg:pl-1"> Viktor Korshunov</span>
           </p>
         </section>
         <section className=" mt-8 lg:mt-24 mb-4 flex col-start-1 lg:col-start-10 col-end-5 lg:col-end-12 justify-start lg:justify-end mx-5 lg:mx-0">

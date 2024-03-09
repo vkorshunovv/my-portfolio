@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./contacts.css";
+import React  from 'react';
 
 export default function Contacts({ isDarkMode }) {
   const [name, setName] = useState("");
@@ -105,6 +106,7 @@ export default function Contacts({ isDarkMode }) {
               isDarkMode ? "text-slate-100" : "text-slate-800"
             }`}
             onSubmit={handleSubmit}
+            autoComplete="on"
           >
             <input
               type="text"
@@ -118,6 +120,7 @@ export default function Contacts({ isDarkMode }) {
               } `}
               onChange={(e) => setName(e.target.value)}
               value={name}
+              autoComplete="on"
             ></input>
             <br />
             <input
@@ -132,6 +135,7 @@ export default function Contacts({ isDarkMode }) {
               } `}
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              autoComplete="on"
             ></input>
             <br />
             <textarea
@@ -142,6 +146,7 @@ export default function Contacts({ isDarkMode }) {
               rows="4"
               cols="5"
               required
+              autoComplete="off"
               className={`w-full m-1 p-3 rounded-lg size-48 resize-none shadow-2xl ${
                 isDarkMode
                   ? "bg-teal-950 focus:bg-slate-950"

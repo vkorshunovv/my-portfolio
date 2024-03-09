@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+import React  from 'react';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React  from 'react';
 
 import "./header.css";
 
@@ -18,7 +19,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 70) {
         setSmall(true);
       } else {
         setSmall(false);
@@ -36,7 +37,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
       id="header"
       className="grid grid-cols-4 lg:grid-cols-12 items-center justify-items-end pt-6"
     >
-      <div
+      <nav
         className={`text-l font-light col-start-7 col-end-12 blured-2 hidden lg:flex ${
           isDarkMode ? "text-slate-400" : "darkText"
         } `}
@@ -58,7 +59,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
             <a href="#contacts">Contacts</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <button
         onClick={toggleTheme}
         className="container lg:col-start-12 mr-9 blured-2"

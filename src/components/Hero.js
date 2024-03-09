@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import me from "../assets/hero/myPhoto.png";
 import meLight from "../assets/hero/myPhotoLight.png";
+import React  from 'react';
 
 import "./hero.css";
 
@@ -19,10 +20,10 @@ export default function Hero({ isDarkMode }) {
   }, []);
 
   return (
-    <div className="min-h-screen grid grid-cols-4 lg:grid-cols-12 lg:items-center">
+    <div className="h-min-screen grid grid-cols-4 lg:grid-cols-12 lg:items-center">
       <div
         id="hero"
-        className="col-start-1 col-end-5 lg:space-y-20 ml-5 pt-20 lg:pt-0 pr-3 lg:pr-0 blured-3 "
+        className="col-start-1 col-end-5 lg:col-end-7 lg:space-y-20 ml-5 pt-10 lg:pt-0 pr-3 lg:pr-0 blured-3"
       >
         <h1
           className={`${
@@ -39,7 +40,7 @@ export default function Hero({ isDarkMode }) {
           </span>
         </h1>
         <h2
-          className={` pt-5 ${
+          className={`lg:w-4/6 pt-5 ${
             isDarkMode ? "text-slate-100" : "text-slate-800"
           } text-5xl lg:text-8xl`}
         >
