@@ -3,6 +3,7 @@ import facebook from "../assets/footer/facebook.png";
 import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github from "../assets/footer/github-light.svg";
+import arrow from "../assets/footer/arrow-to-top.png";
 import React from "react";
 
 import "./footer.css";
@@ -100,7 +101,7 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             <span className="font-semibold lg:pl-1"> Viktor Korshunov</span>
           </p>
         </section>
-        <section className=" mt-8 lg:mt-24 mb-4 flex col-start-1 lg:col-start-10 col-end-5 lg:col-end-12 justify-start lg:justify-end mx-5 lg:mx-0">
+        <section className=" mt-8 lg:mt-24 mb-4 flex col-start-1 lg:col-start-10 col-end-5 lg:col-end-12 justify-between lg:justify-end items-start mx-5 lg:mx-0">
           <button
             onClick={toggleTheme}
             className="container"
@@ -113,7 +114,13 @@ export default function Footer({ isDarkMode, toggleTheme }) {
               <div className="star small"></div>
             </div>
           </button>
+          <div className={`lg:hidden size-6 ${isDarkMode ? "invert" : ""} `}>
+            <a href="#header">
+              <img src={arrow} />
+            </a>
+          </div>
         </section>
+        <section className=" lg:hidden flex col-start-1 col-end-5 justify-end px-6 pb-4 "></section>
       </div>
     </div>
   );

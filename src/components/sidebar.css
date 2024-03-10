@@ -1,9 +1,9 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 27px;
-    height: 27px;
+    height: 24px;
     right: 30px;
     top: 34px;
   }
@@ -14,11 +14,11 @@
     border-radius: 1rem;
   }
 
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
+
+.bm-cross-button {
     width: 24px;
-  }
+    height: 24px;
+}
 
   /* Color/shape of close button cross */
   .bm-cross {
@@ -37,11 +37,6 @@
     font-size: 1.15em;
   }
 
-  .bm-menuDark {
-    background: radial-gradient(circle, rgb(72, 43, 56) 0%, rgb(27, 41, 56) 100%);
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
 
   /* Wrapper for item list */
   .bm-item-list {
@@ -53,6 +48,10 @@
   /* Individual item */
   .bm-item {
     display: inline-block;
+  }
+
+  .bm-item:hover {
+    color: rgb(153 246 228);
   }
 
   /* Styling of overlay */
