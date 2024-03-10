@@ -7,7 +7,8 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
-import React  from 'react';
+import React from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -17,8 +18,11 @@ function App() {
 
   return (
     <div
-      className={`overscroll-x-none w-screen ${isDarkMode ? "dark-mode" : "light-mode"}`}
+      className={`overscroll-x-none w-screen ${
+        isDarkMode ? "dark-mode" : "light-mode"
+      }`}
     >
+      <Sidebar isDarkMode={isDarkMode} />
       <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
