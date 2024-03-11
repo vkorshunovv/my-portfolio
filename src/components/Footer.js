@@ -114,9 +114,9 @@ export default function Footer({ isDarkMode, toggleTheme }) {
               <div className="star small"></div>
             </div>
           </button>
-          <div className={`lg:hidden size-6 ${isDarkMode ? "invert" : ""} `}>
+          <div className={`lg:hidden mr-3 size-5 ${isDarkMode ? "invert" : ""} `}>
             <a href="#header">
-              <img src={arrow} />
+              <img src={arrow} alt="Arrow to top"/>
             </a>
           </div>
         </section>
