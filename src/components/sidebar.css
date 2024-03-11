@@ -12,7 +12,22 @@
   .bm-burger-bars {
     background: rgb(241 245 249);
     border-radius: 1rem;
+    animation: blured-2 1.5s ease-in;
   }
+
+@keyframes blured-2 {
+  0% {
+    opacity: 0;
+    filter: blur(1.5rem);
+    transform: translateX(50px);
+
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
 
 
 .bm-cross-button {
