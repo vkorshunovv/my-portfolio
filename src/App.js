@@ -9,6 +9,7 @@ import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 import React from "react";
 import Sidebar from "./components/Sidebar";
+import ProjectCard from "./components/ProjectCard.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -27,7 +28,9 @@ function App() {
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Education isDarkMode={isDarkMode} />
-      <Projects isDarkMode={isDarkMode} />
+      <Projects isDarkMode={isDarkMode}>
+        <ProjectCard />
+      </Projects>
       <Contacts isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
     </div>
