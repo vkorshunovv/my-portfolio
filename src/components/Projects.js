@@ -49,7 +49,7 @@ exploring my work and connecting with me.`,
           <strong className="text-6xl lg:text-8xl">My Projects</strong>
         </div>
       </div>
-      <div className="grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-3 space-y-6 lg:space-y-12 pb-28">
+      <div className="flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-3 space-y-6 lg:space-y-12 pb-28">
         <ProjectCard isDarkMode={isDarkMode} main={portfolio} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v1} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v2} />
