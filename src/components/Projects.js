@@ -44,7 +44,7 @@ exploring my work and connecting with me.`,
         isDarkMode ? "bg-slate-950 text-slate-100" : "text-slate-800"
       }`}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-28">
         <div className="mt-10 lg:mt-0 lg:pb-28">
           <strong className="text-6xl lg:text-8xl">My Projects</strong>
         </div>

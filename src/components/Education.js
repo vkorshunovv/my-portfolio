@@ -96,7 +96,7 @@ export default function Education({ isDarkMode }) {
           </em>
         </div>
       </section>
-      <section className="mt-20 lg:mt-28 pb-10 lg:pb-28 flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 ">
+      <section className="mt-20 lg:mt-28 pb-10 lg:pb-0 flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 ">
         <div className="col-start-2 col-end-6 flex m-3 lg:m-1 ml-0 reveal fade-left first">
           <div
             className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
