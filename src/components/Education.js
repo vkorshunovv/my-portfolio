@@ -177,7 +177,7 @@ export default function Education({ isDarkMode }) {
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"
-                        : "text-rose-700 hover:text-teal-900"
+                        : "text-rose-700 hover:text-rose-500"
                     } `}
                   >
                     Coursera <span>&#8599;</span>
@@ -223,7 +223,7 @@ export default function Education({ isDarkMode }) {
                     className={`font-medium ${
                       isDarkMode
                         ? "text-zinc-500 hover:text-teal-500"
-                        : "text-rose-700 hover:text-teal-900"
+                        : "text-rose-700 hover:text-rose-500"
                     } `}
                   >
                     Coursera <span className="">&#8599;</span>

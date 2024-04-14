@@ -25,15 +25,15 @@ export default function About({ isDarkMode }) {
   return (
     <div
       id="about"
-      className={`min-h-screen grid grid-cols-4 lg:grid-cols-12 bg-gradient-to-t ${
+      className={`min-h-screen flex flex-col lg:grid-cols-12 bg-gradient-to-t ${
         isDarkMode ? "from-slate-950" : ""
       }`}
     >
       <section className="lg:grid lg:grid-cols-12 lg:col-start-1 lg: col-end-13 lg:row-start-1">
         <article className="w-full lg: col-start-1 lg:col-end-7 p-5 pt-12 items-end reveal fade-left h-fit">
-          <div className="flex flex-col items-end gap-4">
+          <div className="flex flex-col lg:items-end gap-4">
             <div
-              className={`flex flex-col w-11/12 rounded-2xl p-2 ${
+              className={`flex flex-col lg:w-11/12 rounded-2xl p-2 ${
                 isDarkMode ? "bg-green-900" : "bg-green-300/60"
               }`}
             >
@@ -55,7 +55,7 @@ export default function About({ isDarkMode }) {
               </span>
             </div>
             <div
-              className={`flex flex-col w-9/12 rounded-2xl p-2 ${
+              className={`flex flex-col lg:w-9/12 rounded-2xl p-2 ${
                 isDarkMode ? "bg-green-900" : "bg-green-400/60"
               }`}
             >
@@ -78,7 +78,7 @@ export default function About({ isDarkMode }) {
             </div>
 
             <div
-              className={`flex flex-col w-6/12 rounded-2xl p-2 ${
+              className={`flex flex-col lg:w-6/12 rounded-2xl p-2 ${
                 isDarkMode ? "bg-green-900" : "bg-green-500/60"
               }`}
             >
@@ -136,7 +136,7 @@ export default function About({ isDarkMode }) {
           </p>
         </article>
       </section>
-      <article className="block lg:flex justify-center content-center lg-row-start-2 col-start-1 lg:col-start-2 col-end-5 lg:col-end-12 mb-12 lg:mb-12">
+      <article className="block lg:flex justify-center content-center lg-row-start-2 col-start-1 lg:col-start-2 col-end-5 lg:col-end-12 mb-12 lg:px-[7.5rem]">
         <figure className="aboutContainer lg:basis-2/3 bg-grey-100 lg:mr-6 p-3 lg:p-0 flex items-stretch reveal fade-bottom">
           <img
             className="rounded-2xl shadow-xl"

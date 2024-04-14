@@ -6,6 +6,8 @@ import portfolio_dark from "../assets/projects/portfolio_dark.png";
 import portfolio_light from "../assets/projects/portfolio_light.png";
 import guauleria_v1_img from "../assets/projects/guauleria_v1.png";
 import guauleria_v2_img from "../assets/projects/guauleria_v2.png";
+import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
+import little_lemon_light from "../assets/projects/little_lemon_light.png";
 
 export default function Projects({ isDarkMode }) {
   const portfolio = {
@@ -37,6 +39,15 @@ exploring my work and connecting with me.`,
     img_dark: guauleria_v2_img,
   };
 
+  const little_lemon = {
+    title: "Little Lemon Restaurant",
+    description: `Developed as part of the Meta Coursera Capstone Project. Main goals was
+    design and style a responsive UI, demonstrate clean and bug free coding, use React components to create multiple views and create a website front-end using React JS and JavaScript`,
+    assets: ["React", "JS", "CSS"],
+    img_light: little_lemon_light,
+    img_dark: little_lemon_dark,
+  };
+
   return (
     <div
       id="projects"
@@ -53,6 +64,7 @@ exploring my work and connecting with me.`,
         <ProjectCard isDarkMode={isDarkMode} main={portfolio} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v1} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v2} />
+        <ProjectCard isDarkMode={isDarkMode} main={little_lemon} />
       </div>
     </div>
   );
