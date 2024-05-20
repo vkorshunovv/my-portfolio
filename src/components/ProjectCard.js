@@ -28,17 +28,30 @@ export default function ProjectCard({ isDarkMode, main }) {
               {main.assets.map((asset, index) => (
                 <div
                   key={index}
-                  className={` rounded-full ${
+                  className={` rounded-full flex ${
                     isDarkMode ? "bg-teal-400/10" : "bg-red-600/10"
                   } `}
                 >
-                  <p
-                    className={`px-2 py-1 text-xs font-medium ${
-                      isDarkMode ? "text-teal-300" : "text-red-800"
-                    }`}
-                  >
-                    {asset}
-                  </p>
+                  {asset.title ? (
+                    <a
+                      href={asset.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`px-2 py-1 text-xs font-medium ${
+                        isDarkMode ? "text-teal-300" : "text-red-800"
+                      }`}
+                    >
+                      {asset.title}
+                    </a>
+                  ) : (
+                    <p
+                      className={`px-2 py-1 text-xs font-medium ${
+                        isDarkMode ? "text-teal-300" : "text-red-800"
+                      }`}
+                    >
+                      {asset}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
@@ -46,7 +59,7 @@ export default function ProjectCard({ isDarkMode, main }) {
         </div>
         <div className="lg:basis-7/12 lg:ml-6 w-full h-full lg:size-96 reveal fade-bottom rounded-2xl ">
           <a
-            href="/"
+            href={main.path}
             target="_blank"
             rel="noopener noreferrer"
             className="size-full"
