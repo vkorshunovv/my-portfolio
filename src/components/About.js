@@ -66,7 +66,7 @@ export default function About({ isDarkMode }) {
                     : "bg-green-700/10 text-slate-600"
                 } rounded-2xl py-1 px-2 font-normal `}
               >
-                2022-2023
+                2020-2022
               </span>
               <span
                 className={`font-medium px-2 ${
@@ -109,29 +109,26 @@ export default function About({ isDarkMode }) {
           } `}
         >
           <p className="mb-3 pt-4">
-            Before I delved into the world of web development, I worked in the
-            theater field. This experience gave me a great understanding of
-            working in a large team, where each person is responsible for their
-            part of the process, and everyone together creates a great result.
-            This taught me to better understand people and see the world in all
-            its manifestations.
+            Before getting into web development, I worked in theater. That
+            taught me a lot about teamwork and how important everyone's role is
+            in creating a collaborative project. It also helped me understand
+            people better and see different sides of life.
           </p>
           <p className="my-3 ">
-            Since childhood, I have also been interested in gadgets and
-            technology, reading a huge number of magazines about the latest
-            technological innovations and spending a lot of time on the
-            computer, exploring its capabilities. When I first tried HTML, it
-            was like love at first sight. CSS has finally won me over{" "}
+            I've loved gadgets and technology since I was a kid. I spent hours
+            reading tech magazines and exploring computers. The first time I
+            tried HTML, CSS and JavaScript I was hooked. React won me over even
+            more{" "}
             <span role="img" aria-label="Bomb">
               &#129512;
-            </span>
-            . The ability to instantly see the result of your work opens up the
-            potential for limitless creativity and imagination.
+            </span>{" "}
+            The ability to see my work come to life instantly gives me passion
+            to go forward.
           </p>
           <p className="mt-3 ">
-            Outside work or study, I enjoy walking at the park, listening to
-            music/podcasts, exploring the world with my wife, and taking
-            pictures with my phone
+            Outside of work and study, I enjoy taking walks in the park,
+            listening to music and podcasts, exploring new places around the
+            world with my wife, and capturing moments with my phone
             <span className="text-teal-500"> &#8595;</span>
           </p>
         </article>
