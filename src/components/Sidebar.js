@@ -10,8 +10,12 @@ export default function Sidebar({ isDarkMode }) {
 
   return (
     <div className="lg:hidden">
-      <Menu right width={"100%"} isOpen={open}
-    onStateChange={({ isOpen }) => setOpen(isOpen)}>
+      <Menu
+        right
+        width={"100%"}
+        isOpen={open}
+        onStateChange={({ isOpen }) => setOpen(isOpen)}
+      >
         <a
           href="#header"
           className={`menu-item p-3 pt-20 text-6xl font-black ${

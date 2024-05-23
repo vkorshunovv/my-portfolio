@@ -6,9 +6,39 @@ import github from "../assets/footer/github-light.svg";
 import arrow from "../assets/footer/arrow-to-top.png";
 import React from "react";
 
-import "./footer.css";
-
 export default function Footer({ isDarkMode, toggleTheme }) {
+  const links = [
+    {
+      url: "https://www.instagram.com/vkorshunovv",
+      src: instagram,
+      title: "Instagram",
+      id: 1,
+    },
+    {
+      url: "https://www.facebook.com/victor.korshunow",
+      src: facebook,
+      title: "Facebook",
+      id: 2,
+    },
+    {
+      url: "https://t.me/korshunow",
+      src: telegram,
+      title: "Telegram",
+      id: 3,
+    },
+    {
+      url: "https://www.linkedin.com/in/viktor-korshunow",
+      src: linkedin,
+      title: "Linkedin",
+      id: 4,
+    },
+    {
+      url: "https://github.com/vkorshunovv",
+      src: github,
+      title: "GitHub",
+      id: 5,
+    },
+  ];
   return (
     <div
       id="footer"
@@ -20,71 +50,22 @@ export default function Footer({ isDarkMode, toggleTheme }) {
     >
       <div className="w-full grid grid-cols-4 lg:grid-cols-12 items-center">
         <section className="col-start-1 lg:col-start-2 col-end-5 flex space-x-1 lg:space-x-0 justify-start mt-24 mb-4 gap-2 mx-5 lg:mx-0">
-          <a
-            href="https://www.instagram.com/vkorshunovv"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              src={instagram}
-              alt="Instagram"
-              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                isDarkMode ? "" : "invert"
-              }`}
-            />
-          </a>
-          <a
-            href="https://www.facebook.com/victor.korshunow"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              src={facebook}
-              alt="facebook"
-              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                isDarkMode ? "" : "invert"
-              }`}
-            />
-          </a>
-          <a
-            href="https://t.me/korshunow"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              src={telegram}
-              alt="Telegram"
-              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                isDarkMode ? "" : "invert"
-              }`}
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/viktor-korshunov-6379b6282/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              src={linkedin}
-              alt="LinkedIn"
-              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                isDarkMode ? "" : "invert"
-              }`}
-            />
-          </a>
-          <a
-            href="https://github.com/vkorshunovv"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              src={github}
-              alt="GitHub"
-              className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                isDarkMode ? "" : "invert"
-              }`}
-            />
-          </a>
+          {links.map((link) => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              key={link.id}
+            >
+              <img
+                src={link.src}
+                alt={link.title}
+                className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
+                  isDarkMode ? "" : "invert"
+                }`}
+              />
+            </a>
+          ))}
         </section>
         <section
           className={`${
@@ -114,9 +95,11 @@ export default function Footer({ isDarkMode, toggleTheme }) {
               <div className="star small"></div>
             </div>
           </button>
-          <div className={`lg:hidden mr-3 size-5 ${isDarkMode ? "invert" : ""} `}>
+          <div
+            className={`lg:hidden mr-3 size-5 ${isDarkMode ? "invert" : ""} `}
+          >
             <a href="#header">
-              <img src={arrow} alt="Arrow to top"/>
+              <img src={arrow} alt="Arrow to top" />
             </a>
           </div>
         </section>

@@ -15,10 +15,94 @@ import markdownDark from "../assets/markdownDark.png";
 import knutkit from "../assets/Knutkit.jpeg";
 import michigan from "../assets/michigan.png";
 import meta from "../assets/meta.jpeg";
+import docker from "../assets/docker.png";
+import docker_dark from "../assets/docker_dark.png";
+import canva from "../assets/canva.png";
+import canva_light from "../assets/canva_white.png";
 import "./education.css";
-import React  from 'react';
+import React from "react";
 
 export default function Education({ isDarkMode }) {
+  const tools = [
+    {
+      src: isDarkMode ? reactLogo : reactDark,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "React",
+      id: 1,
+    },
+    {
+      src: html5,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "Html",
+      id: 2,
+    },
+    {
+      src: css3,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "Css",
+      id: 3,
+    },
+    {
+      src: js,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "JavaScript",
+      id: 4,
+    },
+
+    {
+      src: bootstrap,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "Bootstrap",
+      id: 5,
+    },
+    {
+      src: isDarkMode ? tailwind : tailwindDark,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "Tailwind",
+      id: 6,
+    },
+    {
+      src: isDarkMode ? github : githubDark,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "GitHub",
+      id: 7,
+    },
+
+    {
+      src: isDarkMode ? markdown : markdownDark,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "Markdown",
+      id: 8,
+    },
+
+    {
+      src: figma,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "Figma",
+      id: 9,
+    },
+
+    {
+      src: git,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "Git",
+      id: 10,
+    },
+
+    {
+      src: isDarkMode ? canva_light : canva,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "Canva",
+      id: 11,
+    },
+
+    {
+      src: isDarkMode ? docker : docker_dark,
+      style: "size-16 lg:size-32 reveal blur-right",
+      title: "Docker",
+      id: 12,
+    },
+  ];
   return (
     <div
       id="education"
@@ -44,36 +128,14 @@ export default function Education({ isDarkMode }) {
       </section>
       <section className="flex justify-center px-4">
         <div className="flex flex-wrap justify-center gap-4 lg:gap-8 mt-11 items-center lg:w-8/12">
-          <img
-            src={isDarkMode ? reactLogo : reactDark}
-            className="size-16 lg:size-32 reveal blur-left"
-            alt="React"
-          />
-          <img src={html5} className="size-16 lg:size-32 reveal blur-left" alt="Html" />
-          <img src={css3} className="size-16 lg:size-32 reveal blur-left" alt="Css" />
-          <img src={js} className="size-16 lg:size-32 reveal blur-left" alt="JavaScript" />
-          <img
-            src={bootstrap}
-            className="size-16 lg:size-32 reveal blur-left"
-            alt="Bootstrap"
-          />
-          <img
-            src={isDarkMode ? tailwind : tailwindDark}
-            className="size-16 lg:size-32 reveal blur-left"
-            alt="Taiwind"
-          />
-          <img
-            src={isDarkMode ? github : githubDark}
-            className="size-16 lg:size-32 reveal blur-right"
-            alt="GitHub"
-          />
-          <img src={git} className="size-16 lg:size-32 reveal blur-right" alt="Git" />
-          <img src={figma} className="size-16 lg:size-32 reveal blur-right" alt="Figma" />
-          <img
-            src={isDarkMode ? markdown : markdownDark}
-            className="size-16 lg:size-32 reveal blur-right"
-            alt="Markdown"
-          />
+          {tools.map((tool) => (
+            <img
+              key={tool.id}
+              src={tool.src}
+              className={tool.style}
+              alt={tool.title}
+            />
+          ))}
         </div>
       </section>
       <section className="flex justify-end lg:w-11/12 items-end mt-20 lg:mt-44 ">

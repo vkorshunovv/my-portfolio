@@ -1,7 +1,7 @@
   .blured-3 {
     animation: blured-3 2s ease-in;
   }
-  
+
   @keyframes blured-3 {
     0% {
       transform: translateX(-50px);
@@ -15,5 +15,3 @@
     }
   }
 
-
-  
