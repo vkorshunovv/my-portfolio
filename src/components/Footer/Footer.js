@@ -1,9 +1,9 @@
-import instagram from "../assets/footer/instagram.png";
-import facebook from "../assets/footer/facebook.png";
-import telegram from "../assets/footer/telegram.png";
-import linkedin from "../assets/footer/linkedin.png";
-import github from "../assets/footer/github-light.svg";
-import arrow from "../assets/footer/arrow-to-top.png";
+import instagram from "../../assets/footer/instagram.png";
+import facebook from "../../assets/footer/facebook.png";
+import telegram from "../../assets/footer/telegram.png";
+import linkedin from "../../assets/footer/linkedin.png";
+import github from "../../assets/footer/github-light.svg";
+import arrow from "../../assets/footer/arrow-to-top.png";
 import React from "react";
 
 export default function Footer({ isDarkMode, toggleTheme }) {

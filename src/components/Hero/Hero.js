@@ -1,24 +1,11 @@
 import { useEffect } from "react";
-import me from "../assets/hero/myPhoto.png";
-import meLight from "../assets/hero/myPhotoLight.png";
+import me from "../../assets/hero/myPhoto.png";
+import meLight from "../../assets/hero/myPhotoLight.png";
 import React from "react";
 
 import "./hero.css";
 
 export default function Hero({ isDarkMode }) {
-  useEffect(() => {
-    const onPageLoad = () => {
-      console.log("page loaded");
-    };
-
-    if (document.readyState === "complete") {
-      onPageLoad();
-    } else {
-      window.addEventListener("load", onPageLoad, false);
-      return () => window.removeEventListener("load", onPageLoad);
-    }
-  }, []);
-
   return (
     <div className="h-min-screen grid grid-cols-4 lg:grid-cols-12 lg:items-center">
       <div

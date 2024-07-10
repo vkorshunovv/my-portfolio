@@ -1,15 +1,15 @@
 import "./App.css";
 import { useState } from "react";
-import Header from "./components/Header.js";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header.js";
+import Hero from "./components/Hero/Hero.js";
+import About from "./components/About/About";
+import Education from "./components/Education/Education.js";
+import Projects from "./components/Projects/Projects";
+import Contacts from "./components/Contacts/Contacts.js";
+import Footer from "./components/Footer/Footer.js";
 import React from "react";
-import Sidebar from "./components/Sidebar";
-import ProjectCard from "./components/ProjectCard.js";
+import Sidebar from "./components/Sidebar/Sidebar.js";
+import ProjectCard from "./components/ProjectCard/ProjectCard.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);

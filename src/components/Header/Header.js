@@ -4,17 +4,6 @@ import React from "react";
 import "./header.css";
 
 export default function Header({ isDarkMode, toggleTheme }) {
-  useEffect(() => {
-    const onPageLoad = () => {};
-
-    if (document.readyState === "complete") {
-      onPageLoad();
-    } else {
-      window.addEventListener("load", onPageLoad, false);
-      return () => window.removeEventListener("load", onPageLoad);
-    }
-  }, []);
-
   const [small, setSmall] = useState(false);
 
   useEffect(() => {

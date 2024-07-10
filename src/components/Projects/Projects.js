@@ -1,13 +1,13 @@
 import "./projects.css";
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
-import portfolio_dark from "../assets/projects/portfolio_dark.png";
-import portfolio_light from "../assets/projects/portfolio_light.png";
-import guauleria_v1_img from "../assets/projects/guauleria_v1.png";
-import guauleria_v2_img from "../assets/projects/guauleria_landing.png";
-import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
-import little_lemon_light from "../assets/projects/little_lemon_light.png";
+import portfolio_dark from "../../assets/projects/portfolio_dark.png";
+import portfolio_light from "../../assets/projects/portfolio_light.png";
+import guauleria_v1_img from "../../assets/projects/guauleria_v1.png";
+import guauleria_v2_img from "../../assets/projects/guauleria_landing.png";
+import little_lemon_dark from "../../assets/projects/little_lemon_dark.png";
+import little_lemon_light from "../../assets/projects/little_lemon_light.png";
 
 export default function Projects({ isDarkMode }) {
   const portfolio = {
