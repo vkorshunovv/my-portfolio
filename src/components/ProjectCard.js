@@ -9,7 +9,7 @@ export default function ProjectCard({ isDarkMode, main }) {
               : "from-red-300 to-rose-200"
           }`}
         >
-          <div className="h-full p-3 lg:p-4 flex flex-col justify-between">
+          <div className="h-fit gap-y-3 p-3 lg:p-4 flex flex-col justify-between">
             <span
               className={`${
                 isDarkMode ? "text-teal-300" : "text-red-900"
@@ -18,7 +18,7 @@ export default function ProjectCard({ isDarkMode, main }) {
               {main.title}
             </span>
             <p
-              className={`text-pretty font-normal text-sm leading-normal ${
+              className={`text-pretty lg:text-balance font-normal text-sm leading-normal ${
                 isDarkMode ? "text-slate-400" : "text-slate-800"
               }`}
             >
@@ -62,12 +62,12 @@ export default function ProjectCard({ isDarkMode, main }) {
             href={main.path}
             target="_blank"
             rel="noopener noreferrer"
-            className="size-full"
+            className="size-full rounded-2xl flex items-center"
           >
             <img
               src={isDarkMode ? main.img_dark : main.img_light}
               alt={main.title}
-              className="rounded-2xl hover:scale-105 ease duration-300 w-full h-full grayscale hover:grayscale-0 hover:shadow-2xl"
+              className="object-contain rounded-2xl hover:scale-105 ease duration-300 grayscale hover:grayscale-0 hover:shadow-2xl "
             />
           </a>
         </div>
