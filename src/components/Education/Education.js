@@ -1,24 +1,33 @@
-import html5 from "../../assets/html5.png";
-import css3 from "../../assets/css-3.png";
-import js from "../../assets/js.png";
-import reactLogo from "../../assets/react.png";
-import reactDark from "../../assets/reactDark.png";
-import git from "../../assets/git.png";
-import github from "../../assets/github-light.png";
-import githubDark from "../../assets/github_dark.png";
-import figma from "../../assets/figma.png";
-import tailwind from "../../assets/tailwind.png";
-import tailwindDark from "../../assets/tailwindDark.png";
-import bootstrap from "../../assets/bootstrap-5.png";
-import markdown from "../../assets/markdown.png";
-import markdownDark from "../../assets/markdownDark.png";
-import knutkit from "../../assets/Knutkit.jpeg";
-import michigan from "../../assets/michigan.png";
-import meta from "../../assets/meta.jpeg";
-import docker from "../../assets/docker.png";
-import docker_dark from "../../assets/docker_dark.png";
-import canva from "../../assets/canva.png";
-import canva_light from "../../assets/canva_white.png";
+import html5 from "../../assets/education/html5.png";
+import css3 from "../../assets/education/css-3.png";
+import js from "../../assets/education/js.png";
+import reactLogo from "../../assets/education/react.png";
+import reactDark from "../../assets/education/reactDark.png";
+import git from "../../assets/education/git.png";
+import github from "../../assets/education/github-light.png";
+import githubDark from "../../assets/education/github_dark.png";
+import figma from "../../assets/education/figma.png";
+import tailwind from "../../assets/education/tailwind.png";
+import tailwindDark from "../../assets/education/tailwindDark.png";
+import bootstrap from "../../assets/education/bootstrap-5.png";
+import markdown from "../../assets/education/markdown.png";
+import markdownDark from "../../assets/education/markdownDark.png";
+import knutkit from "../../assets/education/Knutkit.jpeg";
+import michigan from "../../assets/education/michigan.png";
+import meta from "../../assets/education/meta.jpeg";
+import docker from "../../assets/education/docker.png";
+import docker_dark from "../../assets/education/docker_dark.png";
+import canva from "../../assets/education/canva.png";
+import canva_light from "../../assets/education/canva_white.png";
+
+import ts from "../../assets/education/ts.png";
+import ts_dark from "../../assets/education/ts-dark.png";
+import jest from "../../assets/education/jest.png";
+import jest_dark from "../../assets/education/jest-dark.png";
+import node_js from "../../assets/education/nodejs.png";
+import node_js_dark from "../../assets/education/nodejs-dark.png";
+import nextjs from "../../assets/education/nextjs.png";
+import nextjs_dark from "../../assets/education/nextjs-dark.png";
 import "./education.css";
 import React from "react";
 
@@ -101,6 +110,31 @@ export default function Education({ isDarkMode }) {
       style: "size-16 lg:size-32 reveal blur-right",
       title: "Docker",
       id: 12,
+    },
+
+    {
+      src: isDarkMode ? jest : jest_dark,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "Jest",
+      id: 13,
+    },
+    {
+      src: isDarkMode ? node_js : node_js_dark,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "NodeJS",
+      id: 14,
+    },
+    {
+      src: nextjs_dark,
+      style: isDarkMode ? "size-16 lg:size-32 reveal blur-left invert" : "size-16 lg:size-32 reveal blur-left",
+      title: "NextJS",
+      id: 15,
+    },
+    {
+      src: isDarkMode ? ts : ts_dark,
+      style: "size-16 lg:size-32 reveal blur-left",
+      title: "TypeScript",
+      id: 16,
     },
   ];
   return (
@@ -196,7 +230,7 @@ export default function Education({ isDarkMode }) {
                       isDarkMode ? "text-zinc-500" : "text-rose-700"
                     } `}
                   >
-                    Specialist degree
+                    Master's degree
                   </p>
                 </div>
               </div>
@@ -230,7 +264,7 @@ export default function Education({ isDarkMode }) {
                       isDarkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
-                    Web Design for Everybody: Basics of Web Development & Coding
+                    Basics of Web Development & Coding
                   </p>
                   <a
                     href="https://coursera.org/share/79bbad2c00ec13c74aee1624d18a0ffa"

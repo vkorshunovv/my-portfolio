@@ -1,7 +1,7 @@
-import rightPic from "../../assets/IMG_7623.png";
-import leftPic from "../../assets/IMG_4479.png";
-import rightPicLight from "../../assets/IMG_7173.png";
-import leftPicLight from "../../assets/IMG_2706.png";
+import rightPic from "../../assets/about/IMG_7623.png";
+import leftPic from "../../assets/about/IMG_4479.png";
+import rightPicLight from "../../assets/about/IMG_7173.png";
+import leftPicLight from "../../assets/about/IMG_2706.png";
 import "./about.css";
 import React from "react";
 
@@ -9,12 +9,12 @@ export default function About({ isDarkMode }) {
   window.addEventListener("scroll", reveal);
 
   function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+    const reveals = document.querySelectorAll(".reveal");
 
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -30,77 +30,6 @@ export default function About({ isDarkMode }) {
       }`}
     >
       <section className="lg:grid lg:grid-cols-12 lg:col-start-1 lg: col-end-13 lg:row-start-1">
-        <article className="w-full lg: col-start-1 lg:col-end-7 p-5 pt-12 items-end reveal fade-left h-fit">
-          <div className="flex flex-col lg:items-end gap-4">
-            <div
-              className={`flex flex-col lg:w-11/12 rounded-2xl p-2 ${
-                isDarkMode ? "bg-green-900" : "bg-green-300/60"
-              }`}
-            >
-              <span
-                className={`${
-                  isDarkMode
-                    ? "bg-teal-400/10 text-slate-100/60"
-                    : "bg-green-600/10 text-slate-600"
-                } rounded-2xl py-1 px-2 font-normal `}
-              >
-                2023-currently
-              </span>
-              <span
-                className={`font-medium px-2 ${
-                  isDarkMode ? "text-slate-100" : "text-slate-950"
-                }`}
-              >
-                Guauleria Frontend developer
-              </span>
-            </div>
-            <div
-              className={`flex flex-col lg:w-9/12 rounded-2xl p-2 ${
-                isDarkMode ? "bg-green-900" : "bg-green-400/60"
-              }`}
-            >
-              <span
-                className={`${
-                  isDarkMode
-                    ? "bg-teal-400/10 text-slate-100/60"
-                    : "bg-green-700/10 text-slate-600"
-                } rounded-2xl py-1 px-2 font-normal `}
-              >
-                2020-2022
-              </span>
-              <span
-                className={`font-medium px-2 ${
-                  isDarkMode ? "text-slate-100" : "text-salte-950"
-                }`}
-              >
-                Tinkoff Bank sales employee
-              </span>
-            </div>
-
-            <div
-              className={`flex flex-col lg:w-6/12 rounded-2xl p-2 ${
-                isDarkMode ? "bg-green-900" : "bg-green-500/60"
-              }`}
-            >
-              <span
-                className={`${
-                  isDarkMode
-                    ? "bg-teal-400/10 text-slate-100/60"
-                    : "bg-green-800/10 text-slate-600"
-                } rounded-2xl py-1 px-2 font-normal `}
-              >
-                2016-2020
-              </span>
-              <span
-                className={`font-medium px-2 ${
-                  isDarkMode ? "text-slate-100" : "text-slate-950"
-                }`}
-              >
-                Kyiv Academic Lypky Theatre actor
-              </span>
-            </div>
-          </div>
-        </article>
         <article
           className={`flex flex-wrap h-min justify-center text-xl col-start-1 lg:col-start-7 col-end-5 lg:col-end-12 font-light lg:font-medium justify-between text-pretty mb-12 bg-gradient-to-t rounded-br-2xl rounded-bl-2xl opacity-70 p-6 lg:mt-4 reveal fade-bottom shadow-4xl ${
             isDarkMode
@@ -109,10 +38,9 @@ export default function About({ isDarkMode }) {
           } `}
         >
           <p className="mb-3 pt-4">
-            Before getting into web development, I worked in theater. That
-            taught me a lot about teamwork and how important everyone's role is
-            in creating a collaborative project. It also helped me understand
-            people better and see different sides of life.
+            Yes, I might not know everything (let's be honest, does anyone?),
+            but the most important skill I have acquired in my entire life is
+            the ability to learn and never stop improving.
           </p>
           <p className="my-3 ">
             I've loved gadgets and technology since I was a kid. I spent hours
@@ -139,6 +67,7 @@ export default function About({ isDarkMode }) {
             className="rounded-2xl shadow-xl"
             src={isDarkMode ? leftPic : leftPicLight}
             alt="first travel card"
+            loading="lazy"
           />
           <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
             <p className="p-3">{`${
@@ -151,6 +80,7 @@ export default function About({ isDarkMode }) {
             className="rounded-xl shadow-xl"
             src={isDarkMode ? rightPic : rightPicLight}
             alt="second travel card"
+            loading="lazy"
           />
           <figcaption className="rounded-xl text-slate-100 font-medium text-md flex justify-end flex-col place-items-center">
             <p className="p-3">{`${

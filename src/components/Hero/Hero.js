@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import me from "../../assets/hero/myPhoto.png";
 import meLight from "../../assets/hero/myPhotoLight.png";
 import React from "react";

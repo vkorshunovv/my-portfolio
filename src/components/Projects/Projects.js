@@ -13,9 +13,9 @@ export default function Projects({ isDarkMode }) {
   const portfolio = {
     title: "Frontend Developer Portfolio",
     description: `My portfolio website is more than just a digital resume — it's a
-dynamic platform where I showcase my creativity, skills, and
-projects in web development. With a modern, interactive and
-responsive design, website is accessible across devices.`,
+      dynamic platform where I showcase my creativity, skills, and
+      projects in web development. With a modern, interactive and
+      responsive design, website is accessible across devices.`,
     assets: [
       "React",
       "Tailwind",
