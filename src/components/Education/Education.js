@@ -26,7 +26,7 @@ import jest from "../../assets/education/jest.png";
 import jest_dark from "../../assets/education/jest-dark.png";
 import node_js from "../../assets/education/nodejs.png";
 import node_js_dark from "../../assets/education/nodejs-dark.png";
-import nextjs from "../../assets/education/nextjs.png";
+// import nextjs from "../../assets/education/nextjs.png";
 import nextjs_dark from "../../assets/education/nextjs-dark.png";
 import "./education.css";
 import React from "react";
