@@ -37,11 +37,6 @@ export default function About({ isDarkMode }) {
               : "text-slate-800 from-green-100"
           } `}
         >
-          <p className="mb-3 pt-4">
-            Yes, I might not know everything (let's be honest, does anyone?),
-            but the most important skill I have acquired in my entire life is
-            the ability to learn and never stop improving.
-          </p>
           <p className="my-3 ">
             I've loved gadgets and technology since I was a kid. I spent hours
             reading tech magazines and exploring computers. The first time I
@@ -52,6 +47,11 @@ export default function About({ isDarkMode }) {
             </span>{" "}
             The ability to see my work come to life instantly gives me passion
             to go forward.
+          </p>
+          <p className="mb-3 pt-4">
+            Yes, I might not know everything (let's be honest, does anyone?),
+            but the most important skill I have acquired in my entire life is
+            the ability to learn and never stop improving.
           </p>
           <p className="mt-3 ">
             Outside of work and study, I enjoy taking walks in the park,

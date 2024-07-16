@@ -1,142 +1,11 @@
-import html5 from "../../assets/education/html5.png";
-import css3 from "../../assets/education/css-3.png";
-import js from "../../assets/education/js.png";
-import reactLogo from "../../assets/education/react.png";
-import reactDark from "../../assets/education/reactDark.png";
-import git from "../../assets/education/git.png";
-import github from "../../assets/education/github-light.png";
-import githubDark from "../../assets/education/github_dark.png";
-import figma from "../../assets/education/figma.png";
-import tailwind from "../../assets/education/tailwind.png";
-import tailwindDark from "../../assets/education/tailwindDark.png";
-import bootstrap from "../../assets/education/bootstrap-5.png";
-import markdown from "../../assets/education/markdown.png";
-import markdownDark from "../../assets/education/markdownDark.png";
 import knutkit from "../../assets/education/Knutkit.jpeg";
 import michigan from "../../assets/education/michigan.png";
 import meta from "../../assets/education/meta.jpeg";
-import docker from "../../assets/education/docker.png";
-import docker_dark from "../../assets/education/docker_dark.png";
-import canva from "../../assets/education/canva.png";
-import canva_light from "../../assets/education/canva_white.png";
-
-import ts from "../../assets/education/ts.png";
-import ts_dark from "../../assets/education/ts-dark.png";
-import jest from "../../assets/education/jest.png";
-import jest_dark from "../../assets/education/jest-dark.png";
-import node_js from "../../assets/education/nodejs.png";
-import node_js_dark from "../../assets/education/nodejs-dark.png";
-// import nextjs from "../../assets/education/nextjs.png";
-import nextjs_dark from "../../assets/education/nextjs-dark.png";
 import "./education.css";
+import { tools } from "../../constants/index";
 import React from "react";
 
 export default function Education({ isDarkMode }) {
-  const tools = [
-    {
-      src: isDarkMode ? reactLogo : reactDark,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "React",
-      id: 1,
-    },
-    {
-      src: html5,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "Html",
-      id: 2,
-    },
-    {
-      src: css3,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "Css",
-      id: 3,
-    },
-    {
-      src: js,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "JavaScript",
-      id: 4,
-    },
-
-    {
-      src: bootstrap,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "Bootstrap",
-      id: 5,
-    },
-    {
-      src: isDarkMode ? tailwind : tailwindDark,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "Tailwind",
-      id: 6,
-    },
-    {
-      src: isDarkMode ? github : githubDark,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "GitHub",
-      id: 7,
-    },
-
-    {
-      src: isDarkMode ? markdown : markdownDark,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "Markdown",
-      id: 8,
-    },
-
-    {
-      src: figma,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "Figma",
-      id: 9,
-    },
-
-    {
-      src: git,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "Git",
-      id: 10,
-    },
-
-    {
-      src: isDarkMode ? canva_light : canva,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "Canva",
-      id: 11,
-    },
-
-    {
-      src: isDarkMode ? docker : docker_dark,
-      style: "size-16 lg:size-32 reveal blur-right",
-      title: "Docker",
-      id: 12,
-    },
-
-    {
-      src: isDarkMode ? jest : jest_dark,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "Jest",
-      id: 13,
-    },
-    {
-      src: isDarkMode ? node_js : node_js_dark,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "NodeJS",
-      id: 14,
-    },
-    {
-      src: nextjs_dark,
-      style: isDarkMode ? "size-16 lg:size-32 reveal blur-left invert" : "size-16 lg:size-32 reveal blur-left",
-      title: "NextJS",
-      id: 15,
-    },
-    {
-      src: isDarkMode ? ts : ts_dark,
-      style: "size-16 lg:size-32 reveal blur-left",
-      title: "TypeScript",
-      id: 16,
-    },
-  ];
   return (
     <div
       id="education"
@@ -165,7 +34,7 @@ export default function Education({ isDarkMode }) {
           {tools.map((tool) => (
             <img
               key={tool.id}
-              src={tool.src}
+              src={isDarkMode ? tool.src_light : tool.src_dark}
               className={tool.style}
               alt={tool.title}
             />

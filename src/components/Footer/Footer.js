@@ -1,44 +1,8 @@
-import instagram from "../../assets/footer/instagram.png";
-import facebook from "../../assets/footer/facebook.png";
-import telegram from "../../assets/footer/telegram.png";
-import linkedin from "../../assets/footer/linkedin.png";
-import github from "../../assets/footer/github-light.svg";
 import arrow from "../../assets/footer/arrow-to-top.png";
+import { links } from "../../constants";
 import React from "react";
 
 export default function Footer({ isDarkMode, toggleTheme }) {
-  const links = [
-    {
-      url: "https://www.instagram.com/vkorshunovv",
-      src: instagram,
-      title: "Instagram",
-      id: 1,
-    },
-    {
-      url: "https://www.facebook.com/victor.korshunow",
-      src: facebook,
-      title: "Facebook",
-      id: 2,
-    },
-    {
-      url: "https://t.me/korshunow",
-      src: telegram,
-      title: "Telegram",
-      id: 3,
-    },
-    {
-      url: "https://www.linkedin.com/in/viktor-korshunow",
-      src: linkedin,
-      title: "Linkedin",
-      id: 4,
-    },
-    {
-      url: "https://github.com/vkorshunovv",
-      src: github,
-      title: "GitHub",
-      id: 5,
-    },
-  ];
   return (
     <div
       id="footer"
