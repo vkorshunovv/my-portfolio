@@ -31,6 +31,7 @@ import guauleria_v1_img from "../assets/projects/guauleria_v1.png";
 import guauleria_v2_img from "../assets/projects/guauleria_landing.png";
 import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
 import little_lemon_light from "../assets/projects/little_lemon_light.png";
+import health_app from "../assets/projects/health_app.png";
 
 import instagram from "../assets/footer/instagram.png";
 import facebook from "../assets/footer/facebook.png";
@@ -177,6 +178,23 @@ export const portfolio = {
   img_light: portfolio_light,
   img_dark: portfolio_dark,
   path: "https://viktorkorshunov.netlify.app",
+};
+
+export const health_management_app = {
+  title: "Health Management App",
+  description: `A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, all built using Next.js.`,
+  assets: [
+    "NextJS",
+    "TypeScript",
+    "Shadcn/ui",
+    {
+      title: "GitHub \u2197",
+      url: "https://github.com/vkorshunovv/health_management_app",
+    },
+  ],
+  img_light: health_app,
+  img_dark: health_app,
+  path: "https://carepulseapp.vercel.app/",
 };
 
 export const guauleria_v1 = {

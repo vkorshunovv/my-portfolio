@@ -6,6 +6,7 @@ import {
   guauleria_v1,
   guauleria_v2,
   little_lemon,
+  health_management_app,
 } from "../../constants";
 
 export default function Projects({ isDarkMode }) {
@@ -23,6 +24,7 @@ export default function Projects({ isDarkMode }) {
       </div>
       <div className="flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-4 space-y-6 lg:space-y-12 pb-28">
         <ProjectCard isDarkMode={isDarkMode} main={portfolio} />
+        <ProjectCard isDarkMode={isDarkMode} main={health_management_app} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v1} />
         <ProjectCard isDarkMode={isDarkMode} main={guauleria_v2} />
         <ProjectCard isDarkMode={isDarkMode} main={little_lemon} />
