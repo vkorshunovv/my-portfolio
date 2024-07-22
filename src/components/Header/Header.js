@@ -22,6 +22,17 @@ export default function Header({ isDarkMode, toggleTheme }) {
     };
   }, []);
 
+  const getClassNames = (link) => {
+    const baseClass = `${small ? "small-2" : ""} `;
+
+    const projectClass = `${
+      link.name === "Projects"
+        ? `${isDarkMode ? "text-teal-500" : "text-red-400"} font-medium `
+        : null
+    }`;
+    return `${baseClass} ${projectClass}`;
+  };
+
   return (
     <div
       id="header"
@@ -34,11 +45,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
       >
         <ul className={`${small ? "small-1" : ""}`}>
           {header.map((link) => (
-            <li
-              className={`${small ? "small-2" : ""} ${
-                link.name === "Projects" && "text-teal-500"
-              }`}
-            >
+            <li className={getClassNames(link)}>
               <a href={link.id}>{link.name}</a>
             </li>
           ))}
