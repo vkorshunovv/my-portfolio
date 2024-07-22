@@ -278,3 +278,11 @@ export const links = [
     id: 5,
   },
 ];
+
+export const header = [
+  { name: "Home", id: "#header" },
+  { name: "About", id: "#about" },
+  { name: "Education", id: "#education" },
+  { name: "Projects", id: "#projects" },
+  { name: "Contacts", id: "#contacts" },
+];

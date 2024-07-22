@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
+import { header } from "../../constants";
 
 import "./header.css";
 
@@ -32,21 +33,15 @@ export default function Header({ isDarkMode, toggleTheme }) {
         } `}
       >
         <ul className={`${small ? "small-1" : ""}`}>
-          <li className={`${small ? "small-2" : ""}`}>
-            <a href="#header">Home</a>
-          </li>
-          <li className={`${small ? "small-2" : ""}`}>
-            <a href="#about">About</a>
-          </li>
-          <li className={`${small ? "small-2" : ""}`}>
-            <a href="#education">Education</a>
-          </li>
-          <li className={`${small ? "small-2" : ""}`}>
-            <a href="#projects">Projects</a>
-          </li>
-          <li className={`${small ? "small-2" : ""}`}>
-            <a href="#contacts">Contacts</a>
-          </li>
+          {header.map((link) => (
+            <li
+              className={`${small ? "small-2" : ""} ${
+                link.name === "Projects" && "text-teal-500"
+              }`}
+            >
+              <a href={link.id}>{link.name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
       <button
@@ -56,7 +51,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
         title="Toggle color mode"
       >
         <div className={`sun ${!isDarkMode ? "visible" : null} `}></div>
-        <div className={`moon ${isDarkMode ? "visible" : null}`}>
+        <div className={`moon ${isDarkMode ? "visible" : null} `}>
           <div className="star"></div>
           <div className="star small"></div>
         </div>
