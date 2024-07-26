@@ -6,7 +6,9 @@
 :root {
   --bg-app:  linear-gradient(-45deg,#f1c3b4, #f8c4c4, #cbd2f5 ,#eec7b1, #d1f4cf,rgb(243, 204, 211) );
   --nav-text: #3f3f46;
+  --nav-text-hover: rgb(153 246 228);
   --nav-project-color: rgb(248 113 113); /* text-red-400 */
+
 
 
 }
@@ -14,7 +16,9 @@
 [data-theme = 'dark'] {
   --bg-app: linear-gradient(-45deg,#422419, #4c0000, #011923 ,#3b1703, #01241c,rgb(43, 3, 10) );
   --nav-text: #fff;
+  --nav-text-hover: rgb(248 113 113);
   --nav-project-color: #14b8a6; /* text-teal-500 */
+  --sidebar: #f1f5f9; /* text-slate-100 */
 }
 
 @supports (font-variation-settings: normal) {

@@ -47,7 +47,7 @@
 
   /* General sidebar styles */
   .bm-menu {
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: var(--bg-app);
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
@@ -63,13 +63,18 @@
   /* Individual item */
   .bm-item {
     display: inline-block;
+    color:var(--nav-text) 
   }
 
   .bm-item:hover {
-    color: rgb(153 246 228);
+    color: var(--nav-text-hover)
   }
 
   /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar-links {
+    color: var(--sidebar);
   }

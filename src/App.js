@@ -24,7 +24,6 @@ function App() {
 
   const handleToggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-    console.log('here');
   };
 
   return (
