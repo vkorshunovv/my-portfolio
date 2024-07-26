@@ -30,7 +30,7 @@ function App() {
       <Sidebar />
       <Header theme={theme} handleToggleTheme={handleToggleTheme} />
       <Hero />
-      <About />
+      <About theme={theme}/>
       <Education />
       <Projects>
         <ProjectCard />
