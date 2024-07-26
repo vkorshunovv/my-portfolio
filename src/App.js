@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import Header from "./components/Header/Header.js";
 import Hero from "./components/Hero/Hero.js";
 import About from "./components/About/About";
@@ -28,16 +27,16 @@ function App() {
 
   return (
     <div className="overscroll-x-none w-screen bg-gradient" data-theme={theme}>
-      <Sidebar  />
-      <Header theme={theme} handleToggleTheme={handleToggleTheme}/>
-      <Hero  />
-      <About  />
-      <Education  />
-      <Projects >
+      <Sidebar />
+      <Header theme={theme} handleToggleTheme={handleToggleTheme} />
+      <Hero />
+      <About />
+      <Education />
+      <Projects>
         <ProjectCard />
       </Projects>
-      <Contacts  />
-      <Footer  toggleTheme={handleToggleTheme} />
+      <Contacts />
+      <Footer toggleTheme={handleToggleTheme} />
     </div>
   );
 }
