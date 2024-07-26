@@ -13,10 +13,10 @@ import ProjectCard from "./components/ProjectCard/ProjectCard.js";
 import useLocalStorage from "./utils/useLocalStorage.js";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  // const [isDarkMode, setIsDarkMode] = useState(true);
+  // const toggleTheme = () => {
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
   //new theme functionality
 
@@ -24,20 +24,21 @@ function App() {
 
   const handleToggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    console.log('here');
   };
 
   return (
     <div className="overscroll-x-none w-screen bg-gradient" data-theme={theme}>
-      <Sidebar isDarkMode={isDarkMode} />
-      <Header isDarkMode={isDarkMode} toggleTheme={handleToggleTheme} />
-      <Hero isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Education isDarkMode={isDarkMode} />
-      <Projects isDarkMode={isDarkMode}>
+      <Sidebar  />
+      <Header theme={theme} handleToggleTheme={handleToggleTheme}/>
+      <Hero  />
+      <About  />
+      <Education  />
+      <Projects >
         <ProjectCard />
       </Projects>
-      <Contacts isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <Contacts  />
+      <Footer  toggleTheme={handleToggleTheme} />
     </div>
   );
 }
