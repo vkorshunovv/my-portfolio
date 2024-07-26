@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer.js";
 import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar.js";
 import ProjectCard from "./components/ProjectCard/ProjectCard.js";
+import useLocalStorage from "./utils/useLocalStorage.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -17,14 +18,18 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
 
+  //new theme functionality
+
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
+
+  const handleToggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
-    <div
-      className={`overscroll-x-none w-screen ${
-        isDarkMode ? "dark-mode" : "light-mode"
-      }`}
-    >
+    <div className="overscroll-x-none w-screen bg-gradient" data-theme={theme}>
       <Sidebar isDarkMode={isDarkMode} />
-      <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <Header isDarkMode={isDarkMode} toggleTheme={handleToggleTheme} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Education isDarkMode={isDarkMode} />

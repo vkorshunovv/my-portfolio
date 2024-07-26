@@ -5,7 +5,7 @@ import { header } from "../../constants";
 import "./header.css";
 
 export default function Header({ isDarkMode, toggleTheme }) {
-  const [small, setSmall] = useState(false);
+  const [verticalNav, setSmall] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +23,7 @@ export default function Header({ isDarkMode, toggleTheme }) {
   }, []);
 
   const getClassNames = (link) => {
-    const baseClass = `${small ? "small-2" : ""} `;
+    const baseClass = `${verticalNav ? "small-2" : ""} `;
 
     const projectClass = `${
       link.name === "Projects"
@@ -43,10 +43,10 @@ export default function Header({ isDarkMode, toggleTheme }) {
           isDarkMode ? "text-slate-400" : "darkText"
         } `}
       >
-        <ul className={`${small ? "small-1" : ""}`}>
+        <ul className={`${verticalNav ? "small-1" : ""}`}>
           {header.map((link) => (
-            <li className={getClassNames(link)}>
-              <a href={link.id}>{link.name}</a>
+            <li className={getClassNames(link)} key={link.id}>
+              <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>

@@ -5,6 +5,10 @@
 /* FONTS */
 
 :root {
+  --bg-app:  linear-gradient(-45deg,#f1c3b4, #f8c4c4, #cbd2f5 ,#eec7b1, #d1f4cf,rgb(243, 204, 211) );
+  
+
+
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
@@ -12,7 +16,10 @@
   :root { font-family: InterVariable, sans-serif; }
 }
 
-/* FONTS END */
+[data-theme = 'dark'] {
+  --bg-app: linear-gradient(-45deg,#422419, #4c0000, #011923 ,#3b1703, #01241c,rgb(43, 3, 10) );
+}
+
 
 html {
   scroll-behavior: smooth;
