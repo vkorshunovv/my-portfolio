@@ -31,7 +31,7 @@ function App() {
       <Header theme={theme} handleToggleTheme={handleToggleTheme} />
       <Hero />
       <About theme={theme}/>
-      <Education />
+      <Education theme={theme}/>
       <Projects>
         <ProjectCard />
       </Projects>
