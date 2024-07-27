@@ -9,12 +9,13 @@ import {
   health_management_app,
 } from "../../constants";
 
-export default function Projects({ isDarkMode }) {
+export default function Projects({ theme }) {
+  const darkMode = theme === "dark";
   return (
     <div
       id="projects"
       className={`min-h-screen ${
-        isDarkMode ? "bg-slate-950 text-slate-100" : "text-slate-800"
+        darkMode ? "bg-slate-950 text-slate-100" : "text-slate-800"
       }`}
     >
       <div className="flex justify-center pt-28">
@@ -23,11 +24,11 @@ export default function Projects({ isDarkMode }) {
         </div>
       </div>
       <div className="flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-4 space-y-6 lg:space-y-12 pb-28">
-        <ProjectCard isDarkMode={isDarkMode} main={portfolio} />
-        <ProjectCard isDarkMode={isDarkMode} main={health_management_app} />
-        <ProjectCard isDarkMode={isDarkMode} main={guauleria_v1} />
-        <ProjectCard isDarkMode={isDarkMode} main={guauleria_v2} />
-        <ProjectCard isDarkMode={isDarkMode} main={little_lemon} />
+        <ProjectCard darkMode={darkMode} main={portfolio} />
+        <ProjectCard darkMode={darkMode} main={health_management_app} />
+        <ProjectCard darkMode={darkMode} main={guauleria_v1} />
+        <ProjectCard darkMode={darkMode} main={guauleria_v2} />
+        <ProjectCard darkMode={darkMode} main={little_lemon} />
       </div>
     </div>
   );

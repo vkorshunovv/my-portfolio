@@ -2,12 +2,13 @@ import arrow from "../../assets/footer/arrow-to-top.png";
 import { links } from "../../constants";
 import React from "react";
 
-export default function Footer({ isDarkMode, toggleTheme }) {
+export default function Footer({ theme, toggleTheme }) {
+  const darkMode = theme === 'dark';
   return (
     <div
       id="footer"
       className={`min-h-36 ${
-        isDarkMode
+        darkMode
           ? "from-slate-950 to-slate-900 bg-gradient-to-b"
           : "bg-gradient-to-t"
       }`}
@@ -25,7 +26,7 @@ export default function Footer({ isDarkMode, toggleTheme }) {
                 src={link.src}
                 alt={link.title}
                 className={`size-8 mx-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 ${
-                  isDarkMode ? "" : "invert"
+                  darkMode ? "" : "invert"
                 }`}
               />
             </a>
@@ -33,7 +34,7 @@ export default function Footer({ isDarkMode, toggleTheme }) {
         </section>
         <section
           className={`${
-            isDarkMode ? "text-slate-100" : "text-slate-800"
+            darkMode ? "text-slate-100" : "text-slate-800"
           } mt-8 lg:mt-24 flex col-start-1 lg:col-start-5 col-end-5 lg:col-end-10 justify-start lg:justify-center mx-5 lg:mx-0 text-sm lg:text-md`}
         >
           <p className="pl-2 lg:pl-0 flex block flex-col lg:flex-row justify-start">
@@ -53,14 +54,14 @@ export default function Footer({ isDarkMode, toggleTheme }) {
             aria-label="Toggle color mode"
             title="Toggle color mode"
           >
-            <div className={`sun ${!isDarkMode ? "visible" : null}`}></div>
-            <div className={`moon ${isDarkMode ? "visible" : null}`}>
+            <div className={`sun ${!darkMode ? "visible" : null}`}></div>
+            <div className={`moon ${darkMode ? "visible" : null}`}>
               <div className="star"></div>
               <div className="star small"></div>
             </div>
           </button>
           <div
-            className={`lg:hidden mr-3 size-5 ${isDarkMode ? "invert" : ""} `}
+            className={`lg:hidden mr-3 size-5 ${darkMode ? "invert" : ""} `}
           >
             <a href="#header">
               <img src={arrow} alt="Arrow to top" />

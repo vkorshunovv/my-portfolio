@@ -1,10 +1,10 @@
-export default function ProjectCard({ isDarkMode, main }) {
+export default function ProjectCard({ darkMode, main }) {
   return (
     <>
       <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-12 row-span-1 block lg:flex justify-between items-center  m-4 lg:m-0 lg:pt-0 space-y-5 lg:space-y-0 pt-16 lg:pt-0">
         <div
           className={`w-full flex items-center lg:basis-5/12 bg-gradient-to-l rounded-2xl lg:mr-6 size-64 lg:size-56 reveal fade-bottom ${
-            isDarkMode
+            darkMode
               ? "from-cyan-950 to-emerald-950"
               : "from-red-300 to-rose-200"
           }`}
@@ -12,14 +12,14 @@ export default function ProjectCard({ isDarkMode, main }) {
           <div className="h-fit gap-y-3 p-3 lg:p-4 flex flex-col justify-between">
             <span
               className={`${
-                isDarkMode ? "text-teal-300" : "text-red-900"
+                darkMode ? "text-teal-300" : "text-red-900"
               } text-xl font-medium `}
             >
               {main.title}
             </span>
             <p
               className={`text-pretty lg:text-balance font-normal text-sm leading-normal ${
-                isDarkMode ? "text-slate-400" : "text-slate-800"
+                darkMode ? "text-slate-400" : "text-slate-800"
               }`}
             >
               {main.description}
@@ -29,7 +29,7 @@ export default function ProjectCard({ isDarkMode, main }) {
                 <div
                   key={index}
                   className={` rounded-full flex ${
-                    isDarkMode ? "bg-teal-400/10" : "bg-red-600/10"
+                    darkMode ? "bg-teal-400/10" : "bg-red-600/10"
                   } `}
                 >
                   {asset.title ? (
@@ -38,7 +38,7 @@ export default function ProjectCard({ isDarkMode, main }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`px-2 py-1 text-xs font-medium ${
-                        isDarkMode ? "text-teal-300" : "text-red-800"
+                        darkMode ? "text-teal-300" : "text-red-800"
                       }`}
                     >
                       {asset.title}
@@ -46,7 +46,7 @@ export default function ProjectCard({ isDarkMode, main }) {
                   ) : (
                     <p
                       className={`px-2 py-1 text-xs font-medium ${
-                        isDarkMode ? "text-teal-300" : "text-red-800"
+                        darkMode ? "text-teal-300" : "text-red-800"
                       }`}
                     >
                       {asset}
@@ -65,7 +65,7 @@ export default function ProjectCard({ isDarkMode, main }) {
             className="size-full rounded-2xl flex items-center"
           >
             <img
-              src={isDarkMode ? main.img_dark : main.img_light}
+              src={darkMode ? main.img_dark : main.img_light}
               alt={main.title}
               className="object-contain rounded-2xl hover:scale-105 ease duration-300 grayscale hover:grayscale-0 hover:shadow-2xl "
             />

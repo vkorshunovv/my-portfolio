@@ -12,13 +12,6 @@ import ProjectCard from "./components/ProjectCard/ProjectCard.js";
 import useLocalStorage from "./utils/useLocalStorage.js";
 
 function App() {
-  // const [isDarkMode, setIsDarkMode] = useState(true);
-  // const toggleTheme = () => {
-  //   setIsDarkMode(!isDarkMode);
-  // };
-
-  //new theme functionality
-
   const [theme, setTheme] = useLocalStorage("theme", "dark");
 
   const handleToggleTheme = () => {
@@ -30,13 +23,13 @@ function App() {
       <Sidebar />
       <Header theme={theme} handleToggleTheme={handleToggleTheme} />
       <Hero />
-      <About theme={theme}/>
-      <Education theme={theme}/>
-      <Projects>
+      <About theme={theme} />
+      <Education theme={theme} />
+      <Projects theme={theme}>
         <ProjectCard />
       </Projects>
-      <Contacts />
-      <Footer toggleTheme={handleToggleTheme} />
+      <Contacts theme={theme} />
+      <Footer theme={theme} toggleTheme={handleToggleTheme} />
     </div>
   );
 }
