@@ -39,6 +39,7 @@ import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github_footer from "../assets/footer/github-light.svg";
 
+
 export const tools = [
   {
     src_light: reactLogo,
@@ -280,9 +281,10 @@ export const links = [
 ];
 
 export const header = [
-  { name: "Home", id: "#header" },
-  { name: "About", id: "#about" },
-  { name: "Education", id: "#education" },
-  { name: "Projects", id: "#projects" },
-  { name: "Contacts", id: "#contacts" },
+  { id: 1, name: "Home", path: "#header" },
+  { id: 2, name: "About", path: "#about" },
+  { id: 3, name: "Education", path: "#education" },
+  { id: 4, name: "Projects", path: "#projects" },
+  { id: 5, name: "Contacts", path: "#contacts" },
 ];
+

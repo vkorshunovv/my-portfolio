@@ -5,24 +5,24 @@ import "./education.css";
 import { tools } from "../../constants/index";
 import React from "react";
 
-export default function Education({ isDarkMode }) {
+export default function Education({ theme }) {
+  const darkMode = theme === "dark";
+
   return (
     <div
       id="education"
-      className={`min-h-screen ${isDarkMode ? "bg-slate-950" : ""}`}
+      className={`min-h-screen ${darkMode && "bg-slate-950"}`}
     >
       <section className="flex justify-center">
         <div className="m-9 lg:m-20">
           <strong
             className={`${
-              isDarkMode ? "text-slate-100" : "text-slate-800"
+              darkMode ? "text-slate-100" : "text-slate-800"
             } text-6xl lg:text-8xl `}
           >
             Languages I speak
             <span
-              className={`${
-                isDarkMode ? "text-teal-500" : "text-teal-400"
-              } ml-2`}
+              className={`${darkMode ? "text-teal-500" : "text-teal-400"} ml-2`}
             >
               ...
             </span>
@@ -34,7 +34,7 @@ export default function Education({ isDarkMode }) {
           {tools.map((tool) => (
             <img
               key={tool.id}
-              src={isDarkMode ? tool.src_light : tool.src_dark}
+              src={darkMode ? tool.src_light : tool.src_dark}
               className={tool.style}
               alt={tool.title}
             />
@@ -44,16 +44,16 @@ export default function Education({ isDarkMode }) {
       <section className="flex justify-end lg:w-11/12 items-end mt-20 lg:mt-44 ">
         <div
           className={`lg:animate-bounce bg-gradient-to-r ${
-            isDarkMode ? "from-teal-950" : "from-teal-100"
+            darkMode ? "from-teal-950" : "from-teal-100"
           } rounded-tl-full rounded-bl-full p-5`}
         >
           <em
             className={`text-xl ${
-              isDarkMode ? "text-teal-100" : "text-teal-600"
+              darkMode ? "text-teal-100" : "text-teal-600"
             } `}
           >
             <span
-              className={`${isDarkMode ? "text-teal-500" : "text-teal-400"} `}
+              className={`${darkMode ? "text-teal-500" : "text-teal-400"} `}
             >
               ...
             </span>
@@ -65,7 +65,7 @@ export default function Education({ isDarkMode }) {
         <div className="col-start-2 col-end-6 flex m-3 lg:m-1 ml-0 reveal fade-left first">
           <div
             className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
-              isDarkMode ? "from-emerald-900" : "from-red-400"
+              darkMode ? "from-emerald-900" : "from-red-400"
             }`}
           >
             <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
@@ -79,7 +79,7 @@ export default function Education({ isDarkMode }) {
               <div className="px-5 text-pretty">
                 <div
                   className={`w-full ${
-                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                    darkMode ? "text-slate-300" : "text-slate-800"
                   } `}
                 >
                   <p className="font-normal mb-4">Aug 2011 - Jun 2016</p>
@@ -89,14 +89,14 @@ export default function Education({ isDarkMode }) {
                   </p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-orange-900"
+                      darkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Theatre and film actor
                   </p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-zinc-500" : "text-rose-700"
+                      darkMode ? "text-zinc-500" : "text-rose-700"
                     } `}
                   >
                     Master's degree
@@ -109,7 +109,7 @@ export default function Education({ isDarkMode }) {
         <div className="col-start-6 col-end-9 flex opacity-90 m-3 lg:m-1 ml-0 reveal fade-left second">
           <div
             className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
-              isDarkMode ? "from-teal-900" : "from-red-300"
+              darkMode ? "from-teal-900" : "from-red-300"
             }`}
           >
             <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
@@ -123,14 +123,14 @@ export default function Education({ isDarkMode }) {
               <div className="px-5 text-balance">
                 <div
                   className={`w-full ${
-                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                    darkMode ? "text-slate-300" : "text-slate-800"
                   } `}
                 >
                   <p className="font-normal mb-4">Jul 2023 - Sep 2023</p>
                   <p className="font-semibold mb-1">University of Michigan</p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-orange-900"
+                      darkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Basics of Web Development & Coding
@@ -140,7 +140,7 @@ export default function Education({ isDarkMode }) {
                     target="_blank"
                     rel="noreferrer noopener"
                     className={`font-medium ${
-                      isDarkMode
+                      darkMode
                         ? "text-zinc-500 hover:text-teal-500"
                         : "text-rose-700 hover:text-rose-500"
                     } `}
@@ -155,7 +155,7 @@ export default function Education({ isDarkMode }) {
         <div className="col-start-9 col-end-12 flex opacity-80 m-3 lg:m-1 ml-0 reveal fade-left third">
           <div
             className={`bg-gradient-to-l rounded-tr-2xl rounded-br-2xl h-64 shadow-2xl lg:shadow-3xl ${
-              isDarkMode ? "from-cyan-900" : "from-red-200"
+              darkMode ? "from-cyan-900" : "from-red-200"
             }`}
           >
             <div className="w-full m-1 lg:m-5 px-5 flex flex-col ">
@@ -169,14 +169,14 @@ export default function Education({ isDarkMode }) {
               <div className="px-5 text-balance">
                 <div
                   className={`w-full ${
-                    isDarkMode ? "text-slate-300" : "text-slate-800"
+                    darkMode ? "text-slate-300" : "text-slate-800"
                   } `}
                 >
                   <p className="font-normal mb-4">Sep 2023 - Dec 2023</p>
                   <p className="font-semibold mb-1">Meta</p>
                   <p
                     className={`font-medium ${
-                      isDarkMode ? "text-slate-500" : "text-orange-900"
+                      darkMode ? "text-slate-500" : "text-orange-900"
                     } `}
                   >
                     Meta Front-End Developer Specialization
@@ -186,7 +186,7 @@ export default function Education({ isDarkMode }) {
                     target="_blank"
                     rel="noreferrer noopener"
                     className={`font-medium ${
-                      isDarkMode
+                      darkMode
                         ? "text-zinc-500 hover:text-teal-500"
                         : "text-rose-700 hover:text-rose-500"
                     } `}

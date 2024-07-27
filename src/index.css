@@ -2,17 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* FONTS */
 
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  --bg-app:  linear-gradient(-45deg,#f1c3b4, #f8c4c4, #cbd2f5 ,#eec7b1, #d1f4cf,rgb(243, 204, 211) );
+  --nav-text: #3f3f46;
+  --nav-text-hover: rgb(153 246 228);
+  --nav-project-color: rgb(248 113 113); /* text-red-400 */
+  --hero-title: #1e293b; /* text-slate-800 */
+  --red-point: rgb(248 113 113); 
+  --green-point: #2dd4bf; /* text-teal-400 */
+  --hero-photo: url("./assets/hero/myPhotoLight.png");
+  --hero-opacity: 85%;
 }
+
+[data-theme = 'dark'] {
+  --bg-app: linear-gradient(-45deg,#422419, #4c0000, #011923 ,#3b1703, #01241c,rgb(43, 3, 10) );
+  --nav-text: #fff;
+  --nav-text-hover: rgb(248 113 113);
+  --nav-project-color: #14b8a6; /* text-teal-500 */
+  --sidebar: #f1f5f9; /* text-slate-100 */
+  --hero-title: #f1f5f9;
+  --red-point: #ef4444; /* text-red-500 */
+  --green-point: #14b8a6; 
+  --hero-photo: url("./assets/hero/myPhoto.png");
+  --hero-opacity: 75%;
+}
+
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
 }
 
-/* FONTS END */
 
 html {
   scroll-behavior: smooth;
@@ -29,24 +48,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-
-    /* Hide scrollbar for Chrome, Safari, and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-
-    /* Hide scrollbar for IE, Edge, and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 
 

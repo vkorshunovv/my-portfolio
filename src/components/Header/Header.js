@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import { header } from "../../constants";
-
 import "./header.css";
 
-export default function Header({ isDarkMode, toggleTheme }) {
-  const [small, setSmall] = useState(false);
+export default function Header({ theme, handleToggleTheme }) {
+  const [verticalNav, setVerticalNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 70) {
-        setSmall(true);
+        setVerticalNav(true);
       } else {
-        setSmall(false);
+        setVerticalNav(false);
       }
     };
 
@@ -23,12 +22,10 @@ export default function Header({ isDarkMode, toggleTheme }) {
   }, []);
 
   const getClassNames = (link) => {
-    const baseClass = `${small ? "small-2" : ""} `;
+    const baseClass = `${verticalNav && "vert-nav"} `;
 
     const projectClass = `${
-      link.name === "Projects"
-        ? `${isDarkMode ? "text-teal-500" : "text-red-400"} font-medium `
-        : null
+      link.name === "Projects" && "nav-project-color font-medium"
     }`;
     return `${baseClass} ${projectClass}`;
   };
@@ -38,27 +35,23 @@ export default function Header({ isDarkMode, toggleTheme }) {
       id="header"
       className="grid grid-cols-4 lg:grid-cols-12 items-center justify-items-end pt-6"
     >
-      <nav
-        className={`text-l font-light col-start-7 col-end-12 blured-2 hidden lg:flex ${
-          isDarkMode ? "text-slate-400" : "darkText"
-        } `}
-      >
-        <ul className={`${small ? "small-1" : ""}`}>
+      <nav className="text-l font-light col-start-7 col-end-12 blured-2 hidden lg:flex nav-text">
+        <ul className={`${verticalNav ? "vert-nav-container" : ""}`}>
           {header.map((link) => (
-            <li className={getClassNames(link)}>
-              <a href={link.id}>{link.name}</a>
+            <li className={getClassNames(link)} key={link.id}>
+              <a href={link.path}>{link.name}</a>
             </li>
           ))}
         </ul>
       </nav>
       <button
-        onClick={toggleTheme}
+        onClick={handleToggleTheme}
         className="container lg:col-start-12 mr-9 blured-2"
         aria-label="Toggle color mode"
         title="Toggle color mode"
       >
-        <div className={`sun ${!isDarkMode ? "visible" : null} `}></div>
-        <div className={`moon ${isDarkMode ? "visible" : null} `}>
+        <div className={`sun ${theme === "light" && "visible"} `}></div>
+        <div className={`moon ${theme === "dark" && "visible"} `}>
           <div className="star"></div>
           <div className="star small"></div>
         </div>

@@ -2,12 +2,13 @@ import { useState } from "react";
 import "./contacts.css";
 import React from "react";
 
-export default function Contacts({ isDarkMode }) {
+export default function Contacts({ theme }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonText, setButtonText] = useState("Boom!");
   const myButtonElement = document.getElementById("submit");
+  const darkMode = theme === 'dark';
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -66,32 +67,32 @@ export default function Contacts({ isDarkMode }) {
     <div
       id="contacts"
       className={`min-h-screen ${
-        isDarkMode ? "bg-slate-950" : ""
+        darkMode ? "bg-slate-950" : ""
       } grid grid-cols-4 lg:grid-cols-12 items-center`}
     >
       <section className="col-start-1 lg:col-start-2 col-end-5 lg:col-end-8 revealing-image mx-5 lg:mx-0">
         <div className="flex flex-wrap ">
           <strong
             className={`${
-              isDarkMode ? "text-slate-100" : "text-slate-800"
+              darkMode ? "text-slate-100" : "text-slate-800"
             } text-7xl lg:text-9xl mb-12`}
           >
             Lets talk
             <span
-              className={`${isDarkMode ? "text-teal-500" : "text-teal-400"}`}
+              className={`${darkMode ? "text-teal-500" : "text-teal-400"}`}
             >
               .
             </span>
           </strong>
           <strong
             className={`${
-              isDarkMode ? "text-slate-100" : "text-slate-800"
+              darkMode ? "text-slate-100" : "text-slate-800"
             } text-6xl lg:text-8xl`}
           >
             I'm waiting for your thoughts, questions, or just a friendly hello
             <span
               className={`${
-                isDarkMode ? "text-red-500" : "text-red-400"
+                darkMode ? "text-red-500" : "text-red-400"
               } text-6xl lg:text-9xl`}
             >
               .
@@ -103,7 +104,7 @@ export default function Contacts({ isDarkMode }) {
         <div className="w-full">
           <form
             className={`flex flex-wrap justify-end ${
-              isDarkMode ? "text-slate-100" : "text-slate-800"
+              darkMode ? "text-slate-100" : "text-slate-800"
             }`}
             onSubmit={handleSubmit}
             autoComplete="on"
@@ -114,7 +115,7 @@ export default function Contacts({ isDarkMode }) {
               placeholder="Name"
               required
               className={`w-full m-1 p-3 rounded-lg  shadow-2xl ${
-                isDarkMode
+                darkMode
                   ? "bg-teal-800 focus:bg-slate-950"
                   : "bg-red-100 focus:bg-red-100"
               } `}
@@ -129,7 +130,7 @@ export default function Contacts({ isDarkMode }) {
               placeholder="Email"
               required
               className={`w-full m-1 p-3 rounded-lg  shadow-2xl ${
-                isDarkMode
+                darkMode
                   ? "bg-teal-900 focus:bg-slate-950"
                   : "bg-red-200 focus:bg-red-100"
               } `}
@@ -148,7 +149,7 @@ export default function Contacts({ isDarkMode }) {
               required
               autoComplete="off"
               className={`w-full m-1 p-3 rounded-lg size-48 resize-none shadow-2xl ${
-                isDarkMode
+                darkMode
                   ? "bg-teal-950 focus:bg-slate-950"
                   : "bg-red-300 focus:bg-red-100"
               } `}
@@ -160,7 +161,7 @@ export default function Contacts({ isDarkMode }) {
                 id="submit"
                 value={buttonText}
                 className={`m-9 p-2 w-48 h-12 rounded-md text-2xl bg-gradient-to-r duration-100 ${
-                  isDarkMode
+                  darkMode
                     ? "from-zinc-800 to-gray-700 text-slate-400 hover:text-rose-200 hover:from-rose-950 hover:to-rose-900 hover:shadow-pink-900"
                     : "from-zinc-400 to-stone-400 text-slate-800 hover:text-teal-700 hover:from-teal-200 hover:to-teal-100 hover:shadow-teal-300"
                 }  focus:scale-105 hover:scale-105 hover:shadow-2xl  active:scale-95`}

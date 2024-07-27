@@ -1,17 +1,32 @@
-  .blured-3 {
-    animation: blured-3 2s ease-in;
-  }
+.blured-hero {
+  animation: blured-hero 2s ease-in;
+}
 
-  @keyframes blured-3 {
-    0% {
-      transform: translateX(-50px);
-      opacity: 0;
-      filter: blur(1.5rem);
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-      filter: blur(0);
-    }
+@keyframes blured-hero {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+    filter: blur(1.5rem);
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
+.hero-title {
+  color: var(--hero-title);
+}
+
+.red-point {
+  color: var(--red-point);
+}
+
+.green-point {
+  color: var(--green-point);
+}
+
+.hero-opacity {
+opacity: var(--hero-opacity);
+}
