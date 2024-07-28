@@ -10,7 +10,7 @@
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: rgb(241 245 249);
+    background: var(--hero-title);
     border-radius: 1rem;
     animation: blured-2 1.5s ease-in;
   }
@@ -37,7 +37,7 @@
 
   /* Color/shape of close button cross */
   .bm-cross {
-    background: rgb(241 245 249);
+    background:  var(--hero-title);
   }
 
   .bm-menu-wrap {

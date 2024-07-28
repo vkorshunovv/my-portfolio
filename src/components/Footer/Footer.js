@@ -61,10 +61,10 @@ export default function Footer({ theme, toggleTheme }) {
             </div>
           </button>
           <div
-            className={`lg:hidden mr-3 size-5 ${darkMode ? "invert" : ""} `}
+            className={`lg:hidden mr-3 size-6 ${darkMode ? "invert" : ""} `}
           >
             <a href="#header">
-              <img src={arrow} alt="Arrow to top" />
+              <img src={arrow} alt="arrow to top" />
             </a>
           </div>
         </section>
