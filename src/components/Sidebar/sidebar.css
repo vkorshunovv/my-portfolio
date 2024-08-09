@@ -9,7 +9,7 @@
   }
 
   /* Color/shape of burger icon bars */
-  .bm-burger-bars {
+.bm-burger-bars {
     background: var(--hero-title);
     border-radius: 1rem;
     animation: blured-2 1.5s ease-in;

@@ -59,7 +59,7 @@ export default function About({ theme }) {
             the ability to learn and never stop improving.
           </p>
           <p className="mt-3 ">
-            Outside of work and study, I enjoy taking walks in the park,
+            Outside of work and study, I enjoy taking walks in the park, hiking,
             listening to music and podcasts, exploring new places around the
             world with my wife, and capturing moments with my phone
             <span className="text-teal-500"> &#8595;</span>

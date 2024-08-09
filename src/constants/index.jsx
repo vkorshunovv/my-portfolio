@@ -199,7 +199,7 @@ export const health_management_app = {
 };
 
 export const guauleria_v1 = {
-  title: "Guauleria Web Site (v1)",
+  title: "Guauleria Web Application (v1)",
   description: `Guauleria is your go-to destination for all things pet-related, offering a comprehensive marketplace and insurance platform tailored to meet the needs of pet owners worldwide. Developed with cutting-edge technology and fully-responsive design.`,
   assets: [
     "React",
@@ -215,7 +215,7 @@ export const guauleria_v1 = {
 };
 
 export const guauleria_v2 = {
-  title: "Guauleria Web Site (v2)",
+  title: "Guauleria Web Application (v2)",
   description: `Guauleria's second iteration builds upon its foundation as the ultimate pet-centric destination. This enhanced version incorporates feedback from pet owners, resulting in a refined user experience. With improved functionality, the site continues to improve.`,
   assets: [
     "React",
