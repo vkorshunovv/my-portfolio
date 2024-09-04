@@ -7,6 +7,7 @@ import {
   guauleria_v2,
   little_lemon,
   health_management_app,
+  trail_guardians,
 } from "../../constants";
 
 export default function Projects({ theme }) {
@@ -24,6 +25,7 @@ export default function Projects({ theme }) {
         </div>
       </div>
       <div className="flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-4 space-y-6 lg:space-y-12 pb-28">
+        <ProjectCard darkMode={darkMode} main={trail_guardians} />
         <ProjectCard darkMode={darkMode} main={portfolio} />
         <ProjectCard darkMode={darkMode} main={health_management_app} />
         <ProjectCard darkMode={darkMode} main={guauleria_v1} />

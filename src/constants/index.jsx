@@ -32,13 +32,13 @@ import guauleria_v2_img from "../assets/projects/guauleria_landing.png";
 import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
 import little_lemon_light from "../assets/projects/little_lemon_light.png";
 import health_app from "../assets/projects/health_app.png";
+import trail_guardians_img from "../assets/projects/trail-guardians.png";
 
 import instagram from "../assets/footer/instagram.png";
 import facebook from "../assets/footer/facebook.png";
 import telegram from "../assets/footer/telegram.png";
 import linkedin from "../assets/footer/linkedin.png";
 import github_footer from "../assets/footer/github-light.svg";
-
 
 export const tools = [
   {
@@ -230,6 +230,23 @@ export const guauleria_v2 = {
   path: "https://guauleria.netlify.app",
 };
 
+export const trail_guardians = {
+  title: "TrailGuardians Web Application",
+  description: `TrailGuardians is a community platform that helps people organize and join trail clean-up events. Users can report areas needing attention, create and participate in events, and track their collective impact, all to help keep trails clean and safe.`,
+  assets: [
+    "TypeScript",
+    "Express",
+    "PostgreSQL",
+    {
+      title: "GitHub \u2197",
+      url: "https://github.com/vkorshunovv/trail-guardians-frontend",
+    },
+  ],
+  img_light: trail_guardians_img,
+  img_dark: trail_guardians_img,
+  path: "https://viktorkorshunov.netlify.app",
+};
+
 export const little_lemon = {
   title: "Little Lemon Restaurant",
   description: `Developed as part of the Meta Coursera Capstone Project. Main goals was
@@ -287,4 +304,3 @@ export const header = [
   { id: 4, name: "Projects", path: "#projects" },
   { id: 5, name: "Contacts", path: "#contacts" },
 ];
-
