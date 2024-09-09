@@ -24,6 +24,10 @@ import node_js from "../assets/education/nodejs.png";
 import node_js_dark from "../assets/education/nodejs-dark.png";
 import nextjs from "../assets/education/nextjs.png";
 import nextjs_dark from "../assets/education/nextjs_dark.png";
+import expo from "../assets/education/expo_light.png";
+import expo_dark from "../assets/education/expo_dark.png";
+import postgresql from "../assets/education/postgresql_light.png";
+import postgresql_dark from "../assets/education/postgresql_dark.png";
 
 import portfolio_dark from "../assets/projects/portfolio_dark.png";
 import portfolio_light from "../assets/projects/portfolio_light.png";
@@ -159,6 +163,20 @@ export const tools = [
     style: "size-16 lg:size-32 reveal blur-left",
     title: "TypeScript",
     id: 16,
+  },
+  {
+    src_light: expo,
+    src_dark: expo_dark,
+    style: "size-16 lg:size-32 reveal blur-left",
+    title: "Expo",
+    id: 17,
+  },
+  {
+    src_light: postgresql_dark,
+    src_dark: postgresql,
+    style: "size-16 lg:size-32 reveal blur-left",
+    title: "PostgreSQL",
+    id: 18,
   },
 ];
 
