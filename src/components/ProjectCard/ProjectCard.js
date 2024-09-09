@@ -37,7 +37,7 @@ export default function ProjectCard({ darkMode, main }) {
                       href={asset.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`px-2 py-1 text-xs font-medium ${
+                      className={`px-2 py-1 text-[.7rem] font-medium ${
                         darkMode ? "text-teal-300" : "text-red-800"
                       }`}
                     >
@@ -45,7 +45,7 @@ export default function ProjectCard({ darkMode, main }) {
                     </a>
                   ) : (
                     <p
-                      className={`px-2 py-1 text-xs font-medium ${
+                      className={`px-2 py-1 text-[.7rem] font-medium ${
                         darkMode ? "text-teal-300" : "text-red-800"
                       }`}
                     >
