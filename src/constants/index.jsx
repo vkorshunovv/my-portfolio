@@ -262,7 +262,7 @@ export const trail_guardians = {
   ],
   img_light: trail_guardians_img,
   img_dark: trail_guardians_img,
-  path: "https://viktorkorshunov.netlify.app",
+  path: "http://trail-guardians-bucket.s3-website.eu-north-1.amazonaws.com/",
 };
 
 export const little_lemon = {
