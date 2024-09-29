@@ -37,6 +37,7 @@ import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
 import little_lemon_light from "../assets/projects/little_lemon_light.png";
 import health_app from "../assets/projects/health_app.png";
 import trail_guardians_img from "../assets/projects/trail-guardians.png";
+import star_land_img from "../assets/projects/star_land.png";
 
 import instagram from "../assets/footer/instagram.png";
 import facebook from "../assets/footer/facebook.png";
@@ -322,3 +323,20 @@ export const header = [
   { id: 4, name: "Projects", path: "#projects" },
   { id: 5, name: "Contacts", path: "#contacts" },
 ];
+
+export const star_land = {
+  title: "Personal E-commerce Website",
+  description: `I created a fully customized personal e-commerce platform tailored to showcase and sell my client's unique products. The site features seamless integration with Stripe for secure checkout and offers an intuitive, easy-to-navigate product catalog.`,
+  assets: [
+    "Next.js 14",
+    "Amplify Gen 2",
+    "Stripe",
+    {
+      title: "GitHub \u2197",
+      url: "https://github.com/vkorshunovv/photo-store-aws",
+    },
+  ],
+  img_light: star_land_img,
+  img_dark: star_land_img,
+  path: "https://aliceinstarland.com",
+};
