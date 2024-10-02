@@ -2,7 +2,7 @@ import "./projects.css";
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import {
-  portfolio,
+  portfolio_v2,
   guauleria_v1,
   guauleria_v2,
   little_lemon,
@@ -28,7 +28,7 @@ export default function Projects({ theme }) {
       <div className="flex flex-col lg:grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-4 space-y-6 lg:space-y-12 pb-28">
         <ProjectCard darkMode={darkMode} main={star_land} />
         <ProjectCard darkMode={darkMode} main={trail_guardians} />
-        <ProjectCard darkMode={darkMode} main={portfolio} />
+        <ProjectCard darkMode={darkMode} main={portfolio_v2} />
         <ProjectCard darkMode={darkMode} main={health_management_app} />
         <ProjectCard darkMode={darkMode} main={guauleria_v1} />
         <ProjectCard darkMode={darkMode} main={guauleria_v2} />

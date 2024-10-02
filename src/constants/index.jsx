@@ -29,8 +29,7 @@ import expo_dark from "../assets/education/expo_dark.png";
 import postgresql from "../assets/education/postgresql_light.png";
 import postgresql_dark from "../assets/education/postgresql_dark.png";
 
-import portfolio_dark from "../assets/projects/portfolio_dark.png";
-import portfolio_light from "../assets/projects/portfolio_light.png";
+import portfolio from "../assets/projects/portfolio.png";
 import guauleria_v1_img from "../assets/projects/guauleria_v1.png";
 import guauleria_v2_img from "../assets/projects/guauleria_landing.png";
 import little_lemon_dark from "../assets/projects/little_lemon_dark.png";
@@ -181,23 +180,23 @@ export const tools = [
   },
 ];
 
-export const portfolio = {
-  title: "Frontend Developer Portfolio",
+export const portfolio_v2 = {
+  title: "Frontend Developer Portfolio (v2)",
   description: `My portfolio website is more than just a digital resume — it's a
       dynamic platform where I showcase my creativity, skills, and
       projects in web development. With a modern, interactive and
       responsive design, website is accessible across devices.`,
   assets: [
     "React",
-    "Tailwind",
+    "CSS",
     {
       title: "GitHub \u2197",
-      url: "https://github.com/vkorshunovv/my-portfolio.git",
+      url: "https://github.com/vkorshunovv/portfolio-v2.git",
     },
   ],
-  img_light: portfolio_light,
-  img_dark: portfolio_dark,
-  path: "https://viktorkorshunov.netlify.app",
+  img_light: portfolio,
+  img_dark: portfolio,
+  path: "https://viktorkorshunov.vercel.app",
 };
 
 export const health_management_app = {
